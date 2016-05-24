@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.cpp
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.cpp
 btAlignedAllocator.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.h
 malloc.h
 -
 stdlib.h
@@ -16,15 +16,15 @@ stdlib.h
 stdio.h
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.h
 btScalar.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btScalar.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btScalar.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
 btScalar.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btScalar.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btScalar.h
 btAlignedAllocator.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.h
 memory.h
 -
 string.h
@@ -32,95 +32,95 @@ string.h
 new
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHull.cpp
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHull.cpp
 string.h
 -
 btConvexHull.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHull.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHull.h
 btAlignedObjectArray.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
 btMinMax.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btMinMax.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btMinMax.h
 btVector3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHull.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHull.h
 btVector3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 btAlignedObjectArray.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHullComputer.cpp
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHullComputer.cpp
 string.h
 -
 btConvexHullComputer.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHullComputer.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHullComputer.h
 btAlignedObjectArray.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
 btMinMax.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btMinMax.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btMinMax.h
 btVector3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 stdint.h
 -
 stdio.h
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHullComputer.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHullComputer.h
 btVector3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 btAlignedObjectArray.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btGeometryUtil.cpp
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btGeometryUtil.cpp
 btGeometryUtil.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btGeometryUtil.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btGeometryUtil.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btGeometryUtil.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btGeometryUtil.h
 btVector3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 btAlignedObjectArray.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedObjectArray.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btMatrix3x3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btMatrix3x3.h
 btVector3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 btQuaternion.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuaternion.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuaternion.h
 stdio.h
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btMinMax.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btMinMax.h
 btScalar.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btScalar.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btScalar.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btPolarDecomposition.cpp
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btPolarDecomposition.cpp
 btPolarDecomposition.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btPolarDecomposition.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btPolarDecomposition.h
 btMinMax.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btMinMax.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btMinMax.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btPolarDecomposition.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btPolarDecomposition.h
 btMatrix3x3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btMatrix3x3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btMatrix3x3.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuadWord.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuadWord.h
 btScalar.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btScalar.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btScalar.h
 btMinMax.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btMinMax.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btMinMax.h
 altivec.h
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuaternion.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuaternion.h
 btVector3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 btQuadWord.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuadWord.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuadWord.h
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuickprof.cpp
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuickprof.cpp
 btQuickprof.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuickprof.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuickprof.h
 sys/sys_time.h
 -
 sys/time_util.h
@@ -140,17 +140,17 @@ sys/time.h
 stdio.h
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuickprof.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuickprof.h
 stdio.h
 -
 btScalar.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btScalar.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btScalar.h
 btAlignedAllocator.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.h
 new
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btScalar.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btScalar.h
 math.h
 -
 stdlib.h
@@ -192,11 +192,11 @@ arm_neon.h
 arm_neon.h
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btSerializer.cpp
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btSerializer.cpp
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.cpp
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.cpp
 btVector3.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 string.h
 -
 stdint.h
@@ -210,11 +210,11 @@ sys/types.h
 sys/sysctl.h
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.h
 btScalar.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btScalar.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btScalar.h
 btMinMax.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btMinMax.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btMinMax.h
 btAlignedAllocator.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.h
 

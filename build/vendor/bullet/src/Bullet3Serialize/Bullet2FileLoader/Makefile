@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/progress.marks
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/progress.marks
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/clean
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/rule:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/rule
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/rule
 .PHONY : vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/rule
 
 # Convenience name for target.
@@ -166,82 +166,82 @@ Bullet2FileLoader: vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFil
 
 # fast build rule for target.
 Bullet2FileLoader/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build
 .PHONY : Bullet2FileLoader/fast
 
 # target to build an object file
 b3BulletFile.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.o
 .PHONY : b3BulletFile.o
 
 # target to preprocess a source file
 b3BulletFile.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.i
 .PHONY : b3BulletFile.i
 
 # target to generate assembly for a file
 b3BulletFile.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.s
 .PHONY : b3BulletFile.s
 
 # target to build an object file
 b3Chunk.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.o
 .PHONY : b3Chunk.o
 
 # target to preprocess a source file
 b3Chunk.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.i
 .PHONY : b3Chunk.i
 
 # target to generate assembly for a file
 b3Chunk.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.s
 .PHONY : b3Chunk.s
 
 # target to build an object file
 b3DNA.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.o
 .PHONY : b3DNA.o
 
 # target to preprocess a source file
 b3DNA.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.i
 .PHONY : b3DNA.i
 
 # target to generate assembly for a file
 b3DNA.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.s
 .PHONY : b3DNA.s
 
 # target to build an object file
 b3File.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.o
 .PHONY : b3File.o
 
 # target to preprocess a source file
 b3File.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.i
 .PHONY : b3File.i
 
 # target to generate assembly for a file
 b3File.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.s
 .PHONY : b3File.s
 
 # target to build an object file
 b3Serializer.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.o
 .PHONY : b3Serializer.o
 
 # target to preprocess a source file
 b3Serializer.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.i
 .PHONY : b3Serializer.i
 
 # target to generate assembly for a file
 b3Serializer.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.s
 .PHONY : b3Serializer.s
 
 # Help Target
@@ -283,6 +283,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

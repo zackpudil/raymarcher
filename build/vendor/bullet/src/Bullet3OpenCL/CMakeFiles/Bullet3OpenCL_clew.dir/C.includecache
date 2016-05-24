@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/clew/clew.c
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/clew/clew.c
 clew.h
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/clew/clew.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/clew/clew.h
 windows.h
 -
 dlfcn.h
@@ -16,7 +16,7 @@ dlfcn.h
 stdlib.h
 -
 
-/Users/zackpudil/Projects/raytracer/vendor/bullet/src/clew/clew.h
+/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/clew/clew.h
 AvailabilityMacros.h
 -
 stdint.h

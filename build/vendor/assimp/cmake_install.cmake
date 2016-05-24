@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zackpudil/Projects/raytracer/vendor/assimp
+# Install script for directory: /Users/zackpudil/Projects/raymarcher/vendor/assimp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,18 +29,18 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libassimp3.2.0-dev")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/assimp-3.2" TYPE FILE FILES
-    "/Users/zackpudil/Projects/raytracer/build/vendor/assimp/assimp-config.cmake"
-    "/Users/zackpudil/Projects/raytracer/build/vendor/assimp/assimp-config-version.cmake"
+    "/Users/zackpudil/Projects/raymarcher/build/vendor/assimp/assimp-config.cmake"
+    "/Users/zackpudil/Projects/raymarcher/build/vendor/assimp/assimp-config-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libassimp3.2.0-dev")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/zackpudil/Projects/raytracer/build/vendor/assimp/assimp.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/zackpudil/Projects/raymarcher/build/vendor/assimp/assimp.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/assimp/code/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/assimp/code/cmake_install.cmake")
 
 endif()
 

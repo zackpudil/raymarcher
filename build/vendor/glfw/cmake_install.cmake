@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zackpudil/Projects/raytracer/vendor/glfw
+# Install script for directory: /Users/zackpudil/Projects/raymarcher/vendor/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,13 +28,13 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/zackpudil/Projects/raytracer/vendor/glfw/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/zackpudil/Projects/raymarcher/vendor/glfw/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES
-    "/Users/zackpudil/Projects/raytracer/build/vendor/glfw/src/glfw3Config.cmake"
-    "/Users/zackpudil/Projects/raytracer/build/vendor/glfw/src/glfw3ConfigVersion.cmake"
+    "/Users/zackpudil/Projects/raymarcher/build/vendor/glfw/src/glfw3Config.cmake"
+    "/Users/zackpudil/Projects/raymarcher/build/vendor/glfw/src/glfw3ConfigVersion.cmake"
     )
 endif()
 
@@ -42,7 +42,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets.cmake"
-         "/Users/zackpudil/Projects/raytracer/build/vendor/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
+         "/Users/zackpudil/Projects/raymarcher/build/vendor/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -51,19 +51,19 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/Users/zackpudil/Projects/raytracer/build/vendor/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/Users/zackpudil/Projects/raymarcher/build/vendor/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/Users/zackpudil/Projects/raytracer/build/vendor/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/Users/zackpudil/Projects/raymarcher/build/vendor/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-noconfig.cmake")
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/zackpudil/Projects/raytracer/build/vendor/glfw/src/glfw3.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/zackpudil/Projects/raymarcher/build/vendor/glfw/src/glfw3.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/glfw/src/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/glfw/src/cmake_install.cmake")
 
 endif()
 

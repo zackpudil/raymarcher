@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletInverseDynamics/CMakeFiles/progress.marks
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletInverseDynamics/CMakeFiles/progress.marks
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/clean
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/rule:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/rule
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/rule
 .PHONY : vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/rule
 
 # Convenience name for target.
@@ -166,67 +166,67 @@ BulletInverseDynamics: vendor/bullet/src/BulletInverseDynamics/CMakeFiles/Bullet
 
 # fast build rule for target.
 BulletInverseDynamics/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build
 .PHONY : BulletInverseDynamics/fast
 
 # target to build an object file
 IDMath.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.o
 .PHONY : IDMath.o
 
 # target to preprocess a source file
 IDMath.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.i
 .PHONY : IDMath.i
 
 # target to generate assembly for a file
 IDMath.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.s
 .PHONY : IDMath.s
 
 # target to build an object file
 MultiBodyTree.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.o
 .PHONY : MultiBodyTree.o
 
 # target to preprocess a source file
 MultiBodyTree.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.i
 .PHONY : MultiBodyTree.i
 
 # target to generate assembly for a file
 MultiBodyTree.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.s
 .PHONY : MultiBodyTree.s
 
 # target to build an object file
 details/MultiBodyTreeImpl.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.o
 .PHONY : details/MultiBodyTreeImpl.o
 
 # target to preprocess a source file
 details/MultiBodyTreeImpl.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.i
 .PHONY : details/MultiBodyTreeImpl.i
 
 # target to generate assembly for a file
 details/MultiBodyTreeImpl.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.s
 .PHONY : details/MultiBodyTreeImpl.s
 
 # target to build an object file
 details/MultiBodyTreeInitCache.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.o
 .PHONY : details/MultiBodyTreeInitCache.o
 
 # target to preprocess a source file
 details/MultiBodyTreeInitCache.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.i
 .PHONY : details/MultiBodyTreeInitCache.i
 
 # target to generate assembly for a file
 details/MultiBodyTreeInitCache.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make vendor/bullet/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.s
 .PHONY : details/MultiBodyTreeInitCache.s
 
 # Help Target
@@ -265,6 +265,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

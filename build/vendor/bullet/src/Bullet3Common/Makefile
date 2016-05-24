@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Common/CMakeFiles/progress.marks
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Common/CMakeFiles/progress.marks
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/clean
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule
 .PHONY : vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule
 
 # Convenience name for target.
@@ -166,52 +166,52 @@ Bullet3Common: vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule
 
 # fast build rule for target.
 Bullet3Common/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build
 .PHONY : Bullet3Common/fast
 
 # target to build an object file
 b3AlignedAllocator.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.o
 .PHONY : b3AlignedAllocator.o
 
 # target to preprocess a source file
 b3AlignedAllocator.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.i
 .PHONY : b3AlignedAllocator.i
 
 # target to generate assembly for a file
 b3AlignedAllocator.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.s
 .PHONY : b3AlignedAllocator.s
 
 # target to build an object file
 b3Logging.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.o
 .PHONY : b3Logging.o
 
 # target to preprocess a source file
 b3Logging.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.i
 .PHONY : b3Logging.i
 
 # target to generate assembly for a file
 b3Logging.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.s
 .PHONY : b3Logging.s
 
 # target to build an object file
 b3Vector3.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.o
 .PHONY : b3Vector3.o
 
 # target to preprocess a source file
 b3Vector3.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.i
 .PHONY : b3Vector3.i
 
 # target to generate assembly for a file
 b3Vector3.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make vendor/bullet/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.s
 .PHONY : b3Vector3.s
 
 # Help Target
@@ -247,6 +247,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

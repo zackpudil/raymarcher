@@ -4,7 +4,7 @@
 CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.o
  ../vendor/glad/include/KHR/khrplatform.h
  ../vendor/glad/include/glad/glad.h
- /Users/zackpudil/Projects/raytracer/vendor/glad/src/glad.c
+ /Users/zackpudil/Projects/raymarcher/vendor/glad/src/glad.c
 CMakeFiles/raymarcher.dir/src/code/main.cpp.o
  ../src/headers/main.hpp
  ../src/headers/shader.hpp
@@ -223,7 +223,7 @@ CMakeFiles/raymarcher.dir/src/code/main.cpp.o
  ../vendor/glm/glm/vec4.hpp
  ../vendor/glm/glm/vector_relational.hpp
  ../vendor/stb/stb_image.h
- /Users/zackpudil/Projects/raytracer/src/code/main.cpp
+ /Users/zackpudil/Projects/raymarcher/src/code/main.cpp
 CMakeFiles/raymarcher.dir/src/code/shader.cpp.o
  ../src/headers/main.hpp
  ../src/headers/shader.hpp
@@ -441,4 +441,4 @@ CMakeFiles/raymarcher.dir/src/code/shader.cpp.o
  ../vendor/glm/glm/vec4.hpp
  ../vendor/glm/glm/vector_relational.hpp
  ../vendor/stb/stb_image.h
- /Users/zackpudil/Projects/raytracer/src/code/shader.cpp
+ /Users/zackpudil/Projects/raymarcher/src/code/shader.cpp

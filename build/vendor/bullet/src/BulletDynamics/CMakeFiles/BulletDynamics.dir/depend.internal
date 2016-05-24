@@ -39,9 +39,9 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Character/btKinem
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Character/btCharacterControllerInterface.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Character/btKinematicCharacterController.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Character/btKinematicCharacterController.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Character/btCharacterControllerInterface.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Character/btKinematicCharacterController.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Character/btKinematicCharacterController.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btConeTwistConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -57,12 +57,12 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btContactConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -80,13 +80,13 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btContactConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btContactConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btContactConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btContactConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btFixedConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -102,13 +102,13 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btFixedConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btFixedConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btFixedConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btFixedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGearConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -128,8 +128,8 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGearConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGearConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGearConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGearConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -145,12 +145,12 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpring2Constraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -166,12 +166,12 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpringConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -187,13 +187,13 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHinge2Constraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -209,13 +209,13 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btHinge2Constraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btHinge2Constraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btHinge2Constraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btHinge2Constraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHingeConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -231,12 +231,12 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btHingeConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btHingeConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btHingeConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btHingeConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btNNCGConstraintSolver.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -259,9 +259,9 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btNNCGConstraintSolver.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btNNCGConstraintSolver.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btNNCGConstraintSolver.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btNNCGConstraintSolver.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btPoint2PointConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -277,12 +277,12 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolver.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -310,8 +310,8 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSliderConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -327,12 +327,12 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSliderConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSliderConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSliderConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSliderConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -347,9 +347,9 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btScalar.h
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -367,11 +367,11 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -387,13 +387,13 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btUniversalConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/ConstraintSolver/btUniversalConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btUniversalConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/ConstraintSolver/btUniversalConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
@@ -450,9 +450,9 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btDiscre
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Dynamics/btDynamicsWorld.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Dynamics/btDynamicsWorld.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -477,8 +477,8 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btRigidB
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Dynamics/btRigidBody.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Dynamics/btRigidBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Dynamics/btRigidBody.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Dynamics/btRigidBody.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
@@ -515,9 +515,9 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btSimple
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Dynamics/btDynamicsWorld.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Dynamics/btDynamicsWorld.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBody.o
  ../vendor/bullet/src/Bullet3Common/b3Logging.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -535,11 +535,11 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMu
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointFeedback.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointFeedback.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraint.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -558,12 +558,12 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMu
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraintSolver.o
  ../vendor/bullet/src/Bullet3Common/b3Logging.h
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
@@ -591,13 +591,13 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMu
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyDynamicsWorld.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
@@ -641,14 +641,14 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMu
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointLimitConstraint.o
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
  ../vendor/bullet/src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
@@ -665,13 +665,13 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMu
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointMotor.o
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
  ../vendor/bullet/src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
@@ -688,13 +688,13 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMu
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointMotor.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointMotor.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointMotor.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyJointMotor.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyPoint2Point.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -714,27 +714,27 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMu
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBody.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyConstraint.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLink.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btDantzigLCP.o
  ../vendor/bullet/src/LinearMath/btAlignedAllocator.h
  ../vendor/bullet/src/LinearMath/btAlignedObjectArray.h
  ../vendor/bullet/src/LinearMath/btScalar.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/MLCPSolvers/btDantzigLCP.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/MLCPSolvers/btDantzigLCP.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/MLCPSolvers/btDantzigLCP.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/MLCPSolvers/btDantzigLCP.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btLemkeAlgorithm.o
  ../vendor/bullet/src/LinearMath/btAlignedAllocator.h
  ../vendor/bullet/src/LinearMath/btAlignedObjectArray.h
  ../vendor/bullet/src/LinearMath/btMatrixX.h
  ../vendor/bullet/src/LinearMath/btQuickprof.h
  ../vendor/bullet/src/LinearMath/btScalar.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/MLCPSolvers/btLemkeAlgorithm.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/MLCPSolvers/btLemkeAlgorithm.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/MLCPSolvers/btLemkeAlgorithm.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/MLCPSolvers/btLemkeAlgorithm.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLCPSolver.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -761,10 +761,10 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLC
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/MLCPSolvers/btMLCPSolver.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/MLCPSolvers/btMLCPSolver.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/MLCPSolvers/btMLCPSolverInterface.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/MLCPSolvers/btSolveProjectedGaussSeidel.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/MLCPSolvers/btMLCPSolver.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/MLCPSolvers/btMLCPSolver.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/MLCPSolvers/btMLCPSolverInterface.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/MLCPSolvers/btSolveProjectedGaussSeidel.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
@@ -802,10 +802,10 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btRaycast
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btTransformUtil.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Vehicle/btRaycastVehicle.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Vehicle/btRaycastVehicle.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Vehicle/btVehicleRaycaster.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Vehicle/btWheelInfo.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Vehicle/btRaycastVehicle.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Vehicle/btRaycastVehicle.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Vehicle/btVehicleRaycaster.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Vehicle/btWheelInfo.h
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.o
  ../vendor/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
  ../vendor/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
@@ -820,5 +820,5 @@ vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btWheelIn
  ../vendor/bullet/src/LinearMath/btScalar.h
  ../vendor/bullet/src/LinearMath/btTransform.h
  ../vendor/bullet/src/LinearMath/btVector3.h
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Vehicle/btWheelInfo.cpp
- /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletDynamics/Vehicle/btWheelInfo.h
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Vehicle/btWheelInfo.cpp
+ /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletDynamics/Vehicle/btWheelInfo.h

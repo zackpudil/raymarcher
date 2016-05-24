@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 # Include any dependencies generated for this target.
 include vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/depend.make
@@ -59,16 +59,16 @@ include vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o: ../vendor/bullet/src/clew/clew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o   -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/clew/clew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o   -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/clew/clew.c
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/clew/clew.c > CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/clew/clew.c > CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/clew/clew.c -o CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/clew/clew.c -o CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o.requires:
 
@@ -83,16 +83,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o: ../vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuGridBroadphase.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o.requires:
 
@@ -107,16 +107,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseColl
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o: ../vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuSapBroadphase.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o.requires:
 
@@ -131,16 +131,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseColl
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o: ../vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o.requires:
 
@@ -155,16 +155,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseColl
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o: ../vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/BroadphaseCollision/b3GpuParallelLinearBvh.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o.requires:
 
@@ -179,16 +179,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseColl
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o: ../vendor/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/Initialize/b3OpenCLUtils.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o.requires:
 
@@ -203,16 +203,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3O
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ContactCache.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o.requires:
 
@@ -227,16 +227,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3ConvexHullContact.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o.requires:
 
@@ -251,16 +251,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkEpa.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o.requires:
 
@@ -275,16 +275,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkPairDetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkPairDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkPairDetector.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkPairDetector.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkPairDetector.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkPairDetector.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3GjkPairDetector.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o.requires:
 
@@ -299,16 +299,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3OptimizedBvh.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o.requires:
 
@@ -323,16 +323,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3QuantizedBvh.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o.requires:
 
@@ -347,16 +347,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3StridingMeshInterface.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o.requires:
 
@@ -371,16 +371,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleCallback.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o.requires:
 
@@ -395,16 +395,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3TriangleIndexVertexArray.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o.requires:
 
@@ -419,16 +419,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o: ../vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/NarrowphaseCollision/b3VoronoiSimplexSolver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o.requires:
 
@@ -443,16 +443,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCol
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o: ../vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3BoundSearchCL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o.requires:
 
@@ -467,16 +467,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimit
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o: ../vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3FillCL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o.requires:
 
@@ -491,16 +491,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimit
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o: ../vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3LauncherCL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o.requires:
 
@@ -515,16 +515,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimit
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o: ../vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanCL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o.requires:
 
@@ -539,16 +539,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimit
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o: ../vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3PrefixScanFloat4CL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o.requires:
 
@@ -563,16 +563,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimit
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o: ../vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/ParallelPrimitives/b3RadixSort32CL.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o.requires:
 
@@ -587,16 +587,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimit
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o: ../vendor/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/Raycast/b3GpuRaycast.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o.requires:
 
@@ -611,16 +611,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuR
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o: ../vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuGenericConstraint.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o.requires:
 
@@ -635,16 +635,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Gp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o: ../vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuJacobiContactSolver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o.requires:
 
@@ -659,16 +659,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Gp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o: ../vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuNarrowPhase.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o.requires:
 
@@ -683,16 +683,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Gp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o: ../vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsConstraintSolver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o.requires:
 
@@ -707,16 +707,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Gp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o: ../vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuPgsContactSolver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o.requires:
 
@@ -731,16 +731,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Gp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o: ../vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3GpuRigidBodyPipeline.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o.requires:
 
@@ -755,16 +755,16 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Gp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/flags.make
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o: ../vendor/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp > CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.i
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL/RigidBody/b3Solver.cpp -o CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.s
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o.requires:
 
@@ -845,9 +845,9 @@ vendor/bullet/src/Bullet3OpenCL/libBullet3OpenCL_clew.a: vendor/bullet/src/Bulle
 vendor/bullet/src/Bullet3OpenCL/libBullet3OpenCL_clew.a: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o
 vendor/bullet/src/Bullet3OpenCL/libBullet3OpenCL_clew.a: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make
 vendor/bullet/src/Bullet3OpenCL/libBullet3OpenCL_clew.a: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX static library libBullet3OpenCL_clew.a"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && $(CMAKE_COMMAND) -P CMakeFiles/Bullet3OpenCL_clew.dir/cmake_clean_target.cmake
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bullet3OpenCL_clew.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX static library libBullet3OpenCL_clew.a"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && $(CMAKE_COMMAND) -P CMakeFiles/Bullet3OpenCL_clew.dir/cmake_clean_target.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bullet3OpenCL_clew.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build: vendor/bullet/src/Bullet3OpenCL/libBullet3OpenCL_clew.a
@@ -888,10 +888,10 @@ vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/requires: vend
 .PHONY : vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/requires
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/clean:
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL && $(CMAKE_COMMAND) -P CMakeFiles/Bullet3OpenCL_clew.dir/cmake_clean.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL && $(CMAKE_COMMAND) -P CMakeFiles/Bullet3OpenCL_clew.dir/cmake_clean.cmake
 .PHONY : vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/clean
 
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raytracer /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3OpenCL /Users/zackpudil/Projects/raytracer/build /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raymarcher /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3OpenCL /Users/zackpudil/Projects/raymarcher/build /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/depend
 

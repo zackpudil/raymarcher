@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody/CMakeFiles/progress.marks
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody/CMakeFiles/progress.marks
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/clean
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rule:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rule
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rule
 .PHONY : vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rule
 
 # Convenience name for target.
@@ -166,127 +166,127 @@ BulletSoftBody: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/r
 
 # fast build rule for target.
 BulletSoftBody/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build
 .PHONY : BulletSoftBody/fast
 
 # target to build an object file
 btDefaultSoftBodySolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o
 .PHONY : btDefaultSoftBodySolver.o
 
 # target to preprocess a source file
 btDefaultSoftBodySolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.i
 .PHONY : btDefaultSoftBodySolver.i
 
 # target to generate assembly for a file
 btDefaultSoftBodySolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.s
 .PHONY : btDefaultSoftBodySolver.s
 
 # target to build an object file
 btSoftBody.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o
 .PHONY : btSoftBody.o
 
 # target to preprocess a source file
 btSoftBody.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.i
 .PHONY : btSoftBody.i
 
 # target to generate assembly for a file
 btSoftBody.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.s
 .PHONY : btSoftBody.s
 
 # target to build an object file
 btSoftBodyConcaveCollisionAlgorithm.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o
 .PHONY : btSoftBodyConcaveCollisionAlgorithm.o
 
 # target to preprocess a source file
 btSoftBodyConcaveCollisionAlgorithm.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.i
 .PHONY : btSoftBodyConcaveCollisionAlgorithm.i
 
 # target to generate assembly for a file
 btSoftBodyConcaveCollisionAlgorithm.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.s
 .PHONY : btSoftBodyConcaveCollisionAlgorithm.s
 
 # target to build an object file
 btSoftBodyHelpers.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o
 .PHONY : btSoftBodyHelpers.o
 
 # target to preprocess a source file
 btSoftBodyHelpers.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.i
 .PHONY : btSoftBodyHelpers.i
 
 # target to generate assembly for a file
 btSoftBodyHelpers.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.s
 .PHONY : btSoftBodyHelpers.s
 
 # target to build an object file
 btSoftBodyRigidBodyCollisionConfiguration.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o
 .PHONY : btSoftBodyRigidBodyCollisionConfiguration.o
 
 # target to preprocess a source file
 btSoftBodyRigidBodyCollisionConfiguration.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.i
 .PHONY : btSoftBodyRigidBodyCollisionConfiguration.i
 
 # target to generate assembly for a file
 btSoftBodyRigidBodyCollisionConfiguration.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.s
 .PHONY : btSoftBodyRigidBodyCollisionConfiguration.s
 
 # target to build an object file
 btSoftRigidCollisionAlgorithm.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o
 .PHONY : btSoftRigidCollisionAlgorithm.o
 
 # target to preprocess a source file
 btSoftRigidCollisionAlgorithm.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.i
 .PHONY : btSoftRigidCollisionAlgorithm.i
 
 # target to generate assembly for a file
 btSoftRigidCollisionAlgorithm.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.s
 .PHONY : btSoftRigidCollisionAlgorithm.s
 
 # target to build an object file
 btSoftRigidDynamicsWorld.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o
 .PHONY : btSoftRigidDynamicsWorld.o
 
 # target to preprocess a source file
 btSoftRigidDynamicsWorld.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.i
 .PHONY : btSoftRigidDynamicsWorld.i
 
 # target to generate assembly for a file
 btSoftRigidDynamicsWorld.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.s
 .PHONY : btSoftRigidDynamicsWorld.s
 
 # target to build an object file
 btSoftSoftCollisionAlgorithm.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o
 .PHONY : btSoftSoftCollisionAlgorithm.o
 
 # target to preprocess a source file
 btSoftSoftCollisionAlgorithm.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.i
 .PHONY : btSoftSoftCollisionAlgorithm.i
 
 # target to generate assembly for a file
 btSoftSoftCollisionAlgorithm.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.s
 .PHONY : btSoftSoftCollisionAlgorithm.s
 
 # Help Target
@@ -337,6 +337,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

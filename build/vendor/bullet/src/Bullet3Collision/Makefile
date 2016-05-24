@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Collision/CMakeFiles/progress.marks
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Collision/CMakeFiles/progress.marks
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/clean
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/rule:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/rule
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/rule
 .PHONY : vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/rule
 
 # Convenience name for target.
@@ -166,82 +166,82 @@ Bullet3Collision: vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision
 
 # fast build rule for target.
 Bullet3Collision/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build
 .PHONY : Bullet3Collision/fast
 
 # target to build an object file
 BroadPhaseCollision/b3DynamicBvh.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.o
 .PHONY : BroadPhaseCollision/b3DynamicBvh.o
 
 # target to preprocess a source file
 BroadPhaseCollision/b3DynamicBvh.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.i
 .PHONY : BroadPhaseCollision/b3DynamicBvh.i
 
 # target to generate assembly for a file
 BroadPhaseCollision/b3DynamicBvh.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.s
 .PHONY : BroadPhaseCollision/b3DynamicBvh.s
 
 # target to build an object file
 BroadPhaseCollision/b3DynamicBvhBroadphase.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.o
 .PHONY : BroadPhaseCollision/b3DynamicBvhBroadphase.o
 
 # target to preprocess a source file
 BroadPhaseCollision/b3DynamicBvhBroadphase.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.i
 .PHONY : BroadPhaseCollision/b3DynamicBvhBroadphase.i
 
 # target to generate assembly for a file
 BroadPhaseCollision/b3DynamicBvhBroadphase.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.s
 .PHONY : BroadPhaseCollision/b3DynamicBvhBroadphase.s
 
 # target to build an object file
 BroadPhaseCollision/b3OverlappingPairCache.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.o
 .PHONY : BroadPhaseCollision/b3OverlappingPairCache.o
 
 # target to preprocess a source file
 BroadPhaseCollision/b3OverlappingPairCache.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.i
 .PHONY : BroadPhaseCollision/b3OverlappingPairCache.i
 
 # target to generate assembly for a file
 BroadPhaseCollision/b3OverlappingPairCache.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.s
 .PHONY : BroadPhaseCollision/b3OverlappingPairCache.s
 
 # target to build an object file
 NarrowPhaseCollision/b3ConvexUtility.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.o
 .PHONY : NarrowPhaseCollision/b3ConvexUtility.o
 
 # target to preprocess a source file
 NarrowPhaseCollision/b3ConvexUtility.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.i
 .PHONY : NarrowPhaseCollision/b3ConvexUtility.i
 
 # target to generate assembly for a file
 NarrowPhaseCollision/b3ConvexUtility.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.s
 .PHONY : NarrowPhaseCollision/b3ConvexUtility.s
 
 # target to build an object file
 NarrowPhaseCollision/b3CpuNarrowPhase.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.o
 .PHONY : NarrowPhaseCollision/b3CpuNarrowPhase.o
 
 # target to preprocess a source file
 NarrowPhaseCollision/b3CpuNarrowPhase.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.i
 .PHONY : NarrowPhaseCollision/b3CpuNarrowPhase.i
 
 # target to generate assembly for a file
 NarrowPhaseCollision/b3CpuNarrowPhase.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make vendor/bullet/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.s
 .PHONY : NarrowPhaseCollision/b3CpuNarrowPhase.s
 
 # Help Target
@@ -283,6 +283,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

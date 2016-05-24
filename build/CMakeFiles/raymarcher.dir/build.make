@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/raymarcher.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/raymarcher.dir/flags.make
 
 CMakeFiles/raymarcher.dir/src/code/main.cpp.o: CMakeFiles/raymarcher.dir/flags.make
 CMakeFiles/raymarcher.dir/src/code/main.cpp.o: ../src/code/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raymarcher.dir/src/code/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raymarcher.dir/src/code/main.cpp.o -c /Users/zackpudil/Projects/raytracer/src/code/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raymarcher.dir/src/code/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raymarcher.dir/src/code/main.cpp.o -c /Users/zackpudil/Projects/raymarcher/src/code/main.cpp
 
 CMakeFiles/raymarcher.dir/src/code/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raymarcher.dir/src/code/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/src/code/main.cpp > CMakeFiles/raymarcher.dir/src/code/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/src/code/main.cpp > CMakeFiles/raymarcher.dir/src/code/main.cpp.i
 
 CMakeFiles/raymarcher.dir/src/code/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raymarcher.dir/src/code/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/src/code/main.cpp -o CMakeFiles/raymarcher.dir/src/code/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/src/code/main.cpp -o CMakeFiles/raymarcher.dir/src/code/main.cpp.s
 
 CMakeFiles/raymarcher.dir/src/code/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/raymarcher.dir/src/code/main.cpp.o.provides.build: CMakeFiles/raymarc
 
 CMakeFiles/raymarcher.dir/src/code/shader.cpp.o: CMakeFiles/raymarcher.dir/flags.make
 CMakeFiles/raymarcher.dir/src/code/shader.cpp.o: ../src/code/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raymarcher.dir/src/code/shader.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raymarcher.dir/src/code/shader.cpp.o -c /Users/zackpudil/Projects/raytracer/src/code/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raymarcher.dir/src/code/shader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raymarcher.dir/src/code/shader.cpp.o -c /Users/zackpudil/Projects/raymarcher/src/code/shader.cpp
 
 CMakeFiles/raymarcher.dir/src/code/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raymarcher.dir/src/code/shader.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/src/code/shader.cpp > CMakeFiles/raymarcher.dir/src/code/shader.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/src/code/shader.cpp > CMakeFiles/raymarcher.dir/src/code/shader.cpp.i
 
 CMakeFiles/raymarcher.dir/src/code/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raymarcher.dir/src/code/shader.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/src/code/shader.cpp -o CMakeFiles/raymarcher.dir/src/code/shader.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/src/code/shader.cpp -o CMakeFiles/raymarcher.dir/src/code/shader.cpp.s
 
 CMakeFiles/raymarcher.dir/src/code/shader.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/raymarcher.dir/src/code/shader.cpp.o.provides.build: CMakeFiles/rayma
 
 CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.o: CMakeFiles/raymarcher.dir/flags.make
 CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.o: ../vendor/glad/src/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.o   -c /Users/zackpudil/Projects/raytracer/vendor/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.o   -c /Users/zackpudil/Projects/raymarcher/vendor/glad/src/glad.c
 
 CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/glad/src/glad.c > CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/glad/src/glad.c > CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.i
 
 CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/glad/src/glad.c -o CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/glad/src/glad.c -o CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.s
 
 CMakeFiles/raymarcher.dir/vendor/glad/src/glad.c.o.requires:
 
@@ -149,7 +149,7 @@ raymarcher: vendor/bullet/src/BulletCollision/libBulletCollision.a
 raymarcher: vendor/bullet/src/LinearMath/libLinearMath.a
 raymarcher: /usr/lib/libz.dylib
 raymarcher: CMakeFiles/raymarcher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable raymarcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable raymarcher"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raymarcher.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,6 +168,6 @@ CMakeFiles/raymarcher.dir/clean:
 .PHONY : CMakeFiles/raymarcher.dir/clean
 
 CMakeFiles/raymarcher.dir/depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raytracer /Users/zackpudil/Projects/raytracer /Users/zackpudil/Projects/raytracer/build /Users/zackpudil/Projects/raytracer/build /Users/zackpudil/Projects/raytracer/build/CMakeFiles/raymarcher.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raymarcher /Users/zackpudil/Projects/raymarcher /Users/zackpudil/Projects/raymarcher/build /Users/zackpudil/Projects/raymarcher/build /Users/zackpudil/Projects/raymarcher/build/CMakeFiles/raymarcher.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/raymarcher.dir/depend
 

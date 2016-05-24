@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 # Include any dependencies generated for this target.
 include vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/depend.make
@@ -59,16 +59,16 @@ include vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o: ../vendor/bullet/src/LinearMath/btAlignedAllocator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btAlignedAllocator.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btAlignedAllocator.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.cpp
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearMath.dir/btAlignedAllocator.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.cpp > CMakeFiles/LinearMath.dir/btAlignedAllocator.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.cpp > CMakeFiles/LinearMath.dir/btAlignedAllocator.i
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearMath.dir/btAlignedAllocator.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btAlignedAllocator.cpp -o CMakeFiles/LinearMath.dir/btAlignedAllocator.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btAlignedAllocator.cpp -o CMakeFiles/LinearMath.dir/btAlignedAllocator.s
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o.requires:
 
@@ -83,16 +83,16 @@ vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o.prov
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o: ../vendor/bullet/src/LinearMath/btConvexHull.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btConvexHull.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHull.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btConvexHull.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHull.cpp
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearMath.dir/btConvexHull.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHull.cpp > CMakeFiles/LinearMath.dir/btConvexHull.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHull.cpp > CMakeFiles/LinearMath.dir/btConvexHull.i
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearMath.dir/btConvexHull.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHull.cpp -o CMakeFiles/LinearMath.dir/btConvexHull.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHull.cpp -o CMakeFiles/LinearMath.dir/btConvexHull.s
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o.requires:
 
@@ -107,16 +107,16 @@ vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o.provides.b
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o: ../vendor/bullet/src/LinearMath/btConvexHullComputer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btConvexHullComputer.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHullComputer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btConvexHullComputer.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHullComputer.cpp
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearMath.dir/btConvexHullComputer.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHullComputer.cpp > CMakeFiles/LinearMath.dir/btConvexHullComputer.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHullComputer.cpp > CMakeFiles/LinearMath.dir/btConvexHullComputer.i
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearMath.dir/btConvexHullComputer.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btConvexHullComputer.cpp -o CMakeFiles/LinearMath.dir/btConvexHullComputer.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btConvexHullComputer.cpp -o CMakeFiles/LinearMath.dir/btConvexHullComputer.s
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o.requires:
 
@@ -131,16 +131,16 @@ vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o.pr
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o: ../vendor/bullet/src/LinearMath/btGeometryUtil.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btGeometryUtil.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btGeometryUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btGeometryUtil.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btGeometryUtil.cpp
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearMath.dir/btGeometryUtil.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btGeometryUtil.cpp > CMakeFiles/LinearMath.dir/btGeometryUtil.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btGeometryUtil.cpp > CMakeFiles/LinearMath.dir/btGeometryUtil.i
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearMath.dir/btGeometryUtil.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btGeometryUtil.cpp -o CMakeFiles/LinearMath.dir/btGeometryUtil.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btGeometryUtil.cpp -o CMakeFiles/LinearMath.dir/btGeometryUtil.s
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o.requires:
 
@@ -155,16 +155,16 @@ vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o.provides
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o: ../vendor/bullet/src/LinearMath/btPolarDecomposition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btPolarDecomposition.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btPolarDecomposition.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btPolarDecomposition.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btPolarDecomposition.cpp
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearMath.dir/btPolarDecomposition.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btPolarDecomposition.cpp > CMakeFiles/LinearMath.dir/btPolarDecomposition.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btPolarDecomposition.cpp > CMakeFiles/LinearMath.dir/btPolarDecomposition.i
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearMath.dir/btPolarDecomposition.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btPolarDecomposition.cpp -o CMakeFiles/LinearMath.dir/btPolarDecomposition.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btPolarDecomposition.cpp -o CMakeFiles/LinearMath.dir/btPolarDecomposition.s
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o.requires:
 
@@ -179,16 +179,16 @@ vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o.pr
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o: ../vendor/bullet/src/LinearMath/btQuickprof.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btQuickprof.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuickprof.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btQuickprof.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuickprof.cpp
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearMath.dir/btQuickprof.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuickprof.cpp > CMakeFiles/LinearMath.dir/btQuickprof.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuickprof.cpp > CMakeFiles/LinearMath.dir/btQuickprof.i
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearMath.dir/btQuickprof.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btQuickprof.cpp -o CMakeFiles/LinearMath.dir/btQuickprof.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btQuickprof.cpp -o CMakeFiles/LinearMath.dir/btQuickprof.s
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o.requires:
 
@@ -203,16 +203,16 @@ vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o.provides.bu
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o: ../vendor/bullet/src/LinearMath/btSerializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btSerializer.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btSerializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btSerializer.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btSerializer.cpp
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearMath.dir/btSerializer.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btSerializer.cpp > CMakeFiles/LinearMath.dir/btSerializer.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btSerializer.cpp > CMakeFiles/LinearMath.dir/btSerializer.i
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearMath.dir/btSerializer.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btSerializer.cpp -o CMakeFiles/LinearMath.dir/btSerializer.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btSerializer.cpp -o CMakeFiles/LinearMath.dir/btSerializer.s
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o.requires:
 
@@ -227,16 +227,16 @@ vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o.provides.b
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o: ../vendor/bullet/src/LinearMath/btVector3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btVector3.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinearMath.dir/btVector3.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.cpp
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinearMath.dir/btVector3.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.cpp > CMakeFiles/LinearMath.dir/btVector3.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.cpp > CMakeFiles/LinearMath.dir/btVector3.i
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinearMath.dir/btVector3.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath/btVector3.cpp -o CMakeFiles/LinearMath.dir/btVector3.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath/btVector3.cpp -o CMakeFiles/LinearMath.dir/btVector3.s
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o.requires:
 
@@ -273,9 +273,9 @@ vendor/bullet/src/LinearMath/libLinearMath.a: vendor/bullet/src/LinearMath/CMake
 vendor/bullet/src/LinearMath/libLinearMath.a: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o
 vendor/bullet/src/LinearMath/libLinearMath.a: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make
 vendor/bullet/src/LinearMath/libLinearMath.a: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libLinearMath.a"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && $(CMAKE_COMMAND) -P CMakeFiles/LinearMath.dir/cmake_clean_target.cmake
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LinearMath.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libLinearMath.a"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && $(CMAKE_COMMAND) -P CMakeFiles/LinearMath.dir/cmake_clean_target.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LinearMath.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build: vendor/bullet/src/LinearMath/libLinearMath.a
@@ -294,10 +294,10 @@ vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/requires: vendor/bullet/s
 .PHONY : vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/requires
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/clean:
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath && $(CMAKE_COMMAND) -P CMakeFiles/LinearMath.dir/cmake_clean.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath && $(CMAKE_COMMAND) -P CMakeFiles/LinearMath.dir/cmake_clean.cmake
 .PHONY : vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/clean
 
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raytracer /Users/zackpudil/Projects/raytracer/vendor/bullet/src/LinearMath /Users/zackpudil/Projects/raytracer/build /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raymarcher /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/LinearMath /Users/zackpudil/Projects/raymarcher/build /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/depend
 

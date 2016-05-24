@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
 include vendor/glfw/CMakeFiles/uninstall.dir/progress.make
 
 vendor/glfw/CMakeFiles/uninstall:
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/glfw && /usr/local/Cellar/cmake/3.4.1/bin/cmake -P /Users/zackpudil/Projects/raytracer/build/vendor/glfw/cmake_uninstall.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/glfw && /usr/local/Cellar/cmake/3.4.1/bin/cmake -P /Users/zackpudil/Projects/raymarcher/build/vendor/glfw/cmake_uninstall.cmake
 
 uninstall: vendor/glfw/CMakeFiles/uninstall
 uninstall: vendor/glfw/CMakeFiles/uninstall.dir/build.make
@@ -67,10 +67,10 @@ vendor/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : vendor/glfw/CMakeFiles/uninstall.dir/build
 
 vendor/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : vendor/glfw/CMakeFiles/uninstall.dir/clean
 
 vendor/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raytracer /Users/zackpudil/Projects/raytracer/vendor/glfw /Users/zackpudil/Projects/raytracer/build /Users/zackpudil/Projects/raytracer/build/vendor/glfw /Users/zackpudil/Projects/raytracer/build/vendor/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raymarcher /Users/zackpudil/Projects/raymarcher/vendor/glfw /Users/zackpudil/Projects/raymarcher/build /Users/zackpudil/Projects/raymarcher/build/vendor/glfw /Users/zackpudil/Projects/raymarcher/build/vendor/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vendor/glfw/CMakeFiles/uninstall.dir/depend
 

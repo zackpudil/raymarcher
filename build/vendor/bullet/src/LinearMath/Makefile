@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath/CMakeFiles/progress.marks
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath/CMakeFiles/progress.marks
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/clean
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/rule:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/rule
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/rule
 .PHONY : vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/rule
 
 # Convenience name for target.
@@ -166,127 +166,127 @@ LinearMath: vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/rule
 
 # fast build rule for target.
 LinearMath/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build
 .PHONY : LinearMath/fast
 
 # target to build an object file
 btAlignedAllocator.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o
 .PHONY : btAlignedAllocator.o
 
 # target to preprocess a source file
 btAlignedAllocator.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.i
 .PHONY : btAlignedAllocator.i
 
 # target to generate assembly for a file
 btAlignedAllocator.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.s
 .PHONY : btAlignedAllocator.s
 
 # target to build an object file
 btConvexHull.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o
 .PHONY : btConvexHull.o
 
 # target to preprocess a source file
 btConvexHull.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.i
 .PHONY : btConvexHull.i
 
 # target to generate assembly for a file
 btConvexHull.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.s
 .PHONY : btConvexHull.s
 
 # target to build an object file
 btConvexHullComputer.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o
 .PHONY : btConvexHullComputer.o
 
 # target to preprocess a source file
 btConvexHullComputer.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.i
 .PHONY : btConvexHullComputer.i
 
 # target to generate assembly for a file
 btConvexHullComputer.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.s
 .PHONY : btConvexHullComputer.s
 
 # target to build an object file
 btGeometryUtil.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o
 .PHONY : btGeometryUtil.o
 
 # target to preprocess a source file
 btGeometryUtil.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.i
 .PHONY : btGeometryUtil.i
 
 # target to generate assembly for a file
 btGeometryUtil.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.s
 .PHONY : btGeometryUtil.s
 
 # target to build an object file
 btPolarDecomposition.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o
 .PHONY : btPolarDecomposition.o
 
 # target to preprocess a source file
 btPolarDecomposition.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.i
 .PHONY : btPolarDecomposition.i
 
 # target to generate assembly for a file
 btPolarDecomposition.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.s
 .PHONY : btPolarDecomposition.s
 
 # target to build an object file
 btQuickprof.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o
 .PHONY : btQuickprof.o
 
 # target to preprocess a source file
 btQuickprof.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.i
 .PHONY : btQuickprof.i
 
 # target to generate assembly for a file
 btQuickprof.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.s
 .PHONY : btQuickprof.s
 
 # target to build an object file
 btSerializer.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o
 .PHONY : btSerializer.o
 
 # target to preprocess a source file
 btSerializer.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.i
 .PHONY : btSerializer.i
 
 # target to generate assembly for a file
 btSerializer.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.s
 .PHONY : btSerializer.s
 
 # target to build an object file
 btVector3.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o
 .PHONY : btVector3.o
 
 # target to preprocess a source file
 btVector3.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.i
 .PHONY : btVector3.i
 
 # target to generate assembly for a file
 btVector3.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/build.make vendor/bullet/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.s
 .PHONY : btVector3.s
 
 # Help Target
@@ -337,6 +337,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

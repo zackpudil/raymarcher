@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 # Include any dependencies generated for this target.
 include vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/depend.make
@@ -59,16 +59,16 @@ include vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/flags.m
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.o: vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/flags.make
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.o: ../vendor/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp > CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp > CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.i
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp -o CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3Geometry/b3ConvexHullComputer.cpp -o CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.s
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3ConvexHullComputer.o.requires:
 
@@ -83,16 +83,16 @@ vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3ConvexHullCom
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o: vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/flags.make
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o: ../vendor/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp > CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp > CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.i
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp -o CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3Geometry/b3GeometryUtil.cpp -o CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.s
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o.requires:
 
@@ -117,9 +117,9 @@ vendor/bullet/src/Bullet3Geometry/libBullet3Geometry.a: vendor/bullet/src/Bullet
 vendor/bullet/src/Bullet3Geometry/libBullet3Geometry.a: vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/b3GeometryUtil.o
 vendor/bullet/src/Bullet3Geometry/libBullet3Geometry.a: vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/build.make
 vendor/bullet/src/Bullet3Geometry/libBullet3Geometry.a: vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libBullet3Geometry.a"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && $(CMAKE_COMMAND) -P CMakeFiles/Bullet3Geometry.dir/cmake_clean_target.cmake
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bullet3Geometry.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libBullet3Geometry.a"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && $(CMAKE_COMMAND) -P CMakeFiles/Bullet3Geometry.dir/cmake_clean_target.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bullet3Geometry.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/build: vendor/bullet/src/Bullet3Geometry/libBullet3Geometry.a
@@ -132,10 +132,10 @@ vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/requires: vendo
 .PHONY : vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/requires
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/clean:
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry && $(CMAKE_COMMAND) -P CMakeFiles/Bullet3Geometry.dir/cmake_clean.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry && $(CMAKE_COMMAND) -P CMakeFiles/Bullet3Geometry.dir/cmake_clean.cmake
 .PHONY : vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/clean
 
 vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raytracer /Users/zackpudil/Projects/raytracer/vendor/bullet/src/Bullet3Geometry /Users/zackpudil/Projects/raytracer/build /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raymarcher /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/Bullet3Geometry /Users/zackpudil/Projects/raymarcher/build /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vendor/bullet/src/Bullet3Geometry/CMakeFiles/Bullet3Geometry.dir/depend
 

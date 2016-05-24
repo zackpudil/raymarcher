@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Pl
 
 CXX_DEFINES = -DNO_OPENGL3 -DUSE_GRAPHICAL_BENCHMARK
 
-CXX_INCLUDES = -I/Users/zackpudil/Projects/raytracer/vendor/bullet/src 
+CXX_INCLUDES = -I/Users/zackpudil/Projects/raymarcher/vendor/bullet/src 
 

@@ -1906,7 +1906,7 @@ intrin.h
 arm_neon.h
 -
 
-/Users/zackpudil/Projects/raytracer/src/code/main.cpp
+/Users/zackpudil/Projects/raymarcher/src/code/main.cpp
 main.hpp
 -
 glad/glad.h
@@ -1920,7 +1920,7 @@ cstdlib
 shader.hpp
 -
 
-/Users/zackpudil/Projects/raytracer/src/code/shader.cpp
+/Users/zackpudil/Projects/raymarcher/src/code/shader.cpp
 shader.hpp
 -
 

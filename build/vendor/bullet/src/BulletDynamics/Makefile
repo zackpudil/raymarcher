@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletDynamics/CMakeFiles/progress.marks
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletDynamics/CMakeFiles/progress.marks
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/clean
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/rule:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/rule
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/rule
 .PHONY : vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/rule
 
 # Convenience name for target.
@@ -166,487 +166,487 @@ BulletDynamics: vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/r
 
 # fast build rule for target.
 BulletDynamics/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build
 .PHONY : BulletDynamics/fast
 
 # target to build an object file
 Character/btKinematicCharacterController.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Character/btKinematicCharacterController.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Character/btKinematicCharacterController.o
 .PHONY : Character/btKinematicCharacterController.o
 
 # target to preprocess a source file
 Character/btKinematicCharacterController.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Character/btKinematicCharacterController.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Character/btKinematicCharacterController.i
 .PHONY : Character/btKinematicCharacterController.i
 
 # target to generate assembly for a file
 Character/btKinematicCharacterController.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Character/btKinematicCharacterController.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Character/btKinematicCharacterController.s
 .PHONY : Character/btKinematicCharacterController.s
 
 # target to build an object file
 ConstraintSolver/btConeTwistConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btConeTwistConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btConeTwistConstraint.o
 .PHONY : ConstraintSolver/btConeTwistConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btConeTwistConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btConeTwistConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btConeTwistConstraint.i
 .PHONY : ConstraintSolver/btConeTwistConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btConeTwistConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btConeTwistConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btConeTwistConstraint.s
 .PHONY : ConstraintSolver/btConeTwistConstraint.s
 
 # target to build an object file
 ConstraintSolver/btContactConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btContactConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btContactConstraint.o
 .PHONY : ConstraintSolver/btContactConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btContactConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btContactConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btContactConstraint.i
 .PHONY : ConstraintSolver/btContactConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btContactConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btContactConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btContactConstraint.s
 .PHONY : ConstraintSolver/btContactConstraint.s
 
 # target to build an object file
 ConstraintSolver/btFixedConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btFixedConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btFixedConstraint.o
 .PHONY : ConstraintSolver/btFixedConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btFixedConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btFixedConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btFixedConstraint.i
 .PHONY : ConstraintSolver/btFixedConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btFixedConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btFixedConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btFixedConstraint.s
 .PHONY : ConstraintSolver/btFixedConstraint.s
 
 # target to build an object file
 ConstraintSolver/btGearConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGearConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGearConstraint.o
 .PHONY : ConstraintSolver/btGearConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btGearConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGearConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGearConstraint.i
 .PHONY : ConstraintSolver/btGearConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btGearConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGearConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGearConstraint.s
 .PHONY : ConstraintSolver/btGearConstraint.s
 
 # target to build an object file
 ConstraintSolver/btGeneric6DofConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofConstraint.o
 .PHONY : ConstraintSolver/btGeneric6DofConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btGeneric6DofConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofConstraint.i
 .PHONY : ConstraintSolver/btGeneric6DofConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btGeneric6DofConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofConstraint.s
 .PHONY : ConstraintSolver/btGeneric6DofConstraint.s
 
 # target to build an object file
 ConstraintSolver/btGeneric6DofSpring2Constraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpring2Constraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpring2Constraint.o
 .PHONY : ConstraintSolver/btGeneric6DofSpring2Constraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btGeneric6DofSpring2Constraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpring2Constraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpring2Constraint.i
 .PHONY : ConstraintSolver/btGeneric6DofSpring2Constraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btGeneric6DofSpring2Constraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpring2Constraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpring2Constraint.s
 .PHONY : ConstraintSolver/btGeneric6DofSpring2Constraint.s
 
 # target to build an object file
 ConstraintSolver/btGeneric6DofSpringConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpringConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpringConstraint.o
 .PHONY : ConstraintSolver/btGeneric6DofSpringConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btGeneric6DofSpringConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpringConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpringConstraint.i
 .PHONY : ConstraintSolver/btGeneric6DofSpringConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btGeneric6DofSpringConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpringConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btGeneric6DofSpringConstraint.s
 .PHONY : ConstraintSolver/btGeneric6DofSpringConstraint.s
 
 # target to build an object file
 ConstraintSolver/btHinge2Constraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHinge2Constraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHinge2Constraint.o
 .PHONY : ConstraintSolver/btHinge2Constraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btHinge2Constraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHinge2Constraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHinge2Constraint.i
 .PHONY : ConstraintSolver/btHinge2Constraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btHinge2Constraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHinge2Constraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHinge2Constraint.s
 .PHONY : ConstraintSolver/btHinge2Constraint.s
 
 # target to build an object file
 ConstraintSolver/btHingeConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHingeConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHingeConstraint.o
 .PHONY : ConstraintSolver/btHingeConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btHingeConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHingeConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHingeConstraint.i
 .PHONY : ConstraintSolver/btHingeConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btHingeConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHingeConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btHingeConstraint.s
 .PHONY : ConstraintSolver/btHingeConstraint.s
 
 # target to build an object file
 ConstraintSolver/btNNCGConstraintSolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btNNCGConstraintSolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btNNCGConstraintSolver.o
 .PHONY : ConstraintSolver/btNNCGConstraintSolver.o
 
 # target to preprocess a source file
 ConstraintSolver/btNNCGConstraintSolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btNNCGConstraintSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btNNCGConstraintSolver.i
 .PHONY : ConstraintSolver/btNNCGConstraintSolver.i
 
 # target to generate assembly for a file
 ConstraintSolver/btNNCGConstraintSolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btNNCGConstraintSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btNNCGConstraintSolver.s
 .PHONY : ConstraintSolver/btNNCGConstraintSolver.s
 
 # target to build an object file
 ConstraintSolver/btPoint2PointConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btPoint2PointConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btPoint2PointConstraint.o
 .PHONY : ConstraintSolver/btPoint2PointConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btPoint2PointConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btPoint2PointConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btPoint2PointConstraint.i
 .PHONY : ConstraintSolver/btPoint2PointConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btPoint2PointConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btPoint2PointConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btPoint2PointConstraint.s
 .PHONY : ConstraintSolver/btPoint2PointConstraint.s
 
 # target to build an object file
 ConstraintSolver/btSequentialImpulseConstraintSolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolver.o
 .PHONY : ConstraintSolver/btSequentialImpulseConstraintSolver.o
 
 # target to preprocess a source file
 ConstraintSolver/btSequentialImpulseConstraintSolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolver.i
 .PHONY : ConstraintSolver/btSequentialImpulseConstraintSolver.i
 
 # target to generate assembly for a file
 ConstraintSolver/btSequentialImpulseConstraintSolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSequentialImpulseConstraintSolver.s
 .PHONY : ConstraintSolver/btSequentialImpulseConstraintSolver.s
 
 # target to build an object file
 ConstraintSolver/btSliderConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSliderConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSliderConstraint.o
 .PHONY : ConstraintSolver/btSliderConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btSliderConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSliderConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSliderConstraint.i
 .PHONY : ConstraintSolver/btSliderConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btSliderConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSliderConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSliderConstraint.s
 .PHONY : ConstraintSolver/btSliderConstraint.s
 
 # target to build an object file
 ConstraintSolver/btSolve2LinearConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.o
 .PHONY : ConstraintSolver/btSolve2LinearConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btSolve2LinearConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.i
 .PHONY : ConstraintSolver/btSolve2LinearConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btSolve2LinearConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.s
 .PHONY : ConstraintSolver/btSolve2LinearConstraint.s
 
 # target to build an object file
 ConstraintSolver/btTypedConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.o
 .PHONY : ConstraintSolver/btTypedConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btTypedConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.i
 .PHONY : ConstraintSolver/btTypedConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btTypedConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.s
 .PHONY : ConstraintSolver/btTypedConstraint.s
 
 # target to build an object file
 ConstraintSolver/btUniversalConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.o
 .PHONY : ConstraintSolver/btUniversalConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/btUniversalConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.i
 .PHONY : ConstraintSolver/btUniversalConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/btUniversalConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.s
 .PHONY : ConstraintSolver/btUniversalConstraint.s
 
 # target to build an object file
 Dynamics/btDiscreteDynamicsWorld.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.o
 .PHONY : Dynamics/btDiscreteDynamicsWorld.o
 
 # target to preprocess a source file
 Dynamics/btDiscreteDynamicsWorld.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.i
 .PHONY : Dynamics/btDiscreteDynamicsWorld.i
 
 # target to generate assembly for a file
 Dynamics/btDiscreteDynamicsWorld.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.s
 .PHONY : Dynamics/btDiscreteDynamicsWorld.s
 
 # target to build an object file
 Dynamics/btRigidBody.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.o
 .PHONY : Dynamics/btRigidBody.o
 
 # target to preprocess a source file
 Dynamics/btRigidBody.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.i
 .PHONY : Dynamics/btRigidBody.i
 
 # target to generate assembly for a file
 Dynamics/btRigidBody.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.s
 .PHONY : Dynamics/btRigidBody.s
 
 # target to build an object file
 Dynamics/btSimpleDynamicsWorld.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.o
 .PHONY : Dynamics/btSimpleDynamicsWorld.o
 
 # target to preprocess a source file
 Dynamics/btSimpleDynamicsWorld.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.i
 .PHONY : Dynamics/btSimpleDynamicsWorld.i
 
 # target to generate assembly for a file
 Dynamics/btSimpleDynamicsWorld.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.s
 .PHONY : Dynamics/btSimpleDynamicsWorld.s
 
 # target to build an object file
 Featherstone/btMultiBody.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBody.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBody.o
 .PHONY : Featherstone/btMultiBody.o
 
 # target to preprocess a source file
 Featherstone/btMultiBody.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBody.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBody.i
 .PHONY : Featherstone/btMultiBody.i
 
 # target to generate assembly for a file
 Featherstone/btMultiBody.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBody.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBody.s
 .PHONY : Featherstone/btMultiBody.s
 
 # target to build an object file
 Featherstone/btMultiBodyConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraint.o
 .PHONY : Featherstone/btMultiBodyConstraint.o
 
 # target to preprocess a source file
 Featherstone/btMultiBodyConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraint.i
 .PHONY : Featherstone/btMultiBodyConstraint.i
 
 # target to generate assembly for a file
 Featherstone/btMultiBodyConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraint.s
 .PHONY : Featherstone/btMultiBodyConstraint.s
 
 # target to build an object file
 Featherstone/btMultiBodyConstraintSolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraintSolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraintSolver.o
 .PHONY : Featherstone/btMultiBodyConstraintSolver.o
 
 # target to preprocess a source file
 Featherstone/btMultiBodyConstraintSolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraintSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraintSolver.i
 .PHONY : Featherstone/btMultiBodyConstraintSolver.i
 
 # target to generate assembly for a file
 Featherstone/btMultiBodyConstraintSolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraintSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyConstraintSolver.s
 .PHONY : Featherstone/btMultiBodyConstraintSolver.s
 
 # target to build an object file
 Featherstone/btMultiBodyDynamicsWorld.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyDynamicsWorld.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyDynamicsWorld.o
 .PHONY : Featherstone/btMultiBodyDynamicsWorld.o
 
 # target to preprocess a source file
 Featherstone/btMultiBodyDynamicsWorld.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyDynamicsWorld.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyDynamicsWorld.i
 .PHONY : Featherstone/btMultiBodyDynamicsWorld.i
 
 # target to generate assembly for a file
 Featherstone/btMultiBodyDynamicsWorld.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyDynamicsWorld.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyDynamicsWorld.s
 .PHONY : Featherstone/btMultiBodyDynamicsWorld.s
 
 # target to build an object file
 Featherstone/btMultiBodyJointLimitConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointLimitConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointLimitConstraint.o
 .PHONY : Featherstone/btMultiBodyJointLimitConstraint.o
 
 # target to preprocess a source file
 Featherstone/btMultiBodyJointLimitConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointLimitConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointLimitConstraint.i
 .PHONY : Featherstone/btMultiBodyJointLimitConstraint.i
 
 # target to generate assembly for a file
 Featherstone/btMultiBodyJointLimitConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointLimitConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointLimitConstraint.s
 .PHONY : Featherstone/btMultiBodyJointLimitConstraint.s
 
 # target to build an object file
 Featherstone/btMultiBodyJointMotor.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointMotor.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointMotor.o
 .PHONY : Featherstone/btMultiBodyJointMotor.o
 
 # target to preprocess a source file
 Featherstone/btMultiBodyJointMotor.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointMotor.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointMotor.i
 .PHONY : Featherstone/btMultiBodyJointMotor.i
 
 # target to generate assembly for a file
 Featherstone/btMultiBodyJointMotor.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointMotor.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyJointMotor.s
 .PHONY : Featherstone/btMultiBodyJointMotor.s
 
 # target to build an object file
 Featherstone/btMultiBodyPoint2Point.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyPoint2Point.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyPoint2Point.o
 .PHONY : Featherstone/btMultiBodyPoint2Point.o
 
 # target to preprocess a source file
 Featherstone/btMultiBodyPoint2Point.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyPoint2Point.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyPoint2Point.i
 .PHONY : Featherstone/btMultiBodyPoint2Point.i
 
 # target to generate assembly for a file
 Featherstone/btMultiBodyPoint2Point.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyPoint2Point.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Featherstone/btMultiBodyPoint2Point.s
 .PHONY : Featherstone/btMultiBodyPoint2Point.s
 
 # target to build an object file
 MLCPSolvers/btDantzigLCP.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btDantzigLCP.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btDantzigLCP.o
 .PHONY : MLCPSolvers/btDantzigLCP.o
 
 # target to preprocess a source file
 MLCPSolvers/btDantzigLCP.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btDantzigLCP.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btDantzigLCP.i
 .PHONY : MLCPSolvers/btDantzigLCP.i
 
 # target to generate assembly for a file
 MLCPSolvers/btDantzigLCP.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btDantzigLCP.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btDantzigLCP.s
 .PHONY : MLCPSolvers/btDantzigLCP.s
 
 # target to build an object file
 MLCPSolvers/btLemkeAlgorithm.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btLemkeAlgorithm.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btLemkeAlgorithm.o
 .PHONY : MLCPSolvers/btLemkeAlgorithm.o
 
 # target to preprocess a source file
 MLCPSolvers/btLemkeAlgorithm.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btLemkeAlgorithm.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btLemkeAlgorithm.i
 .PHONY : MLCPSolvers/btLemkeAlgorithm.i
 
 # target to generate assembly for a file
 MLCPSolvers/btLemkeAlgorithm.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btLemkeAlgorithm.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btLemkeAlgorithm.s
 .PHONY : MLCPSolvers/btLemkeAlgorithm.s
 
 # target to build an object file
 MLCPSolvers/btMLCPSolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLCPSolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLCPSolver.o
 .PHONY : MLCPSolvers/btMLCPSolver.o
 
 # target to preprocess a source file
 MLCPSolvers/btMLCPSolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLCPSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLCPSolver.i
 .PHONY : MLCPSolvers/btMLCPSolver.i
 
 # target to generate assembly for a file
 MLCPSolvers/btMLCPSolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLCPSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/MLCPSolvers/btMLCPSolver.s
 .PHONY : MLCPSolvers/btMLCPSolver.s
 
 # target to build an object file
 Vehicle/btRaycastVehicle.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.o
 .PHONY : Vehicle/btRaycastVehicle.o
 
 # target to preprocess a source file
 Vehicle/btRaycastVehicle.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.i
 .PHONY : Vehicle/btRaycastVehicle.i
 
 # target to generate assembly for a file
 Vehicle/btRaycastVehicle.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.s
 .PHONY : Vehicle/btRaycastVehicle.s
 
 # target to build an object file
 Vehicle/btWheelInfo.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.o
 .PHONY : Vehicle/btWheelInfo.o
 
 # target to preprocess a source file
 Vehicle/btWheelInfo.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.i
 .PHONY : Vehicle/btWheelInfo.i
 
 # target to generate assembly for a file
 Vehicle/btWheelInfo.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make vendor/bullet/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.s
 .PHONY : Vehicle/btWheelInfo.s
 
 # Help Target
@@ -769,6 +769,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

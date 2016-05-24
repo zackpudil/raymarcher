@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zackpudil/Projects/raytracer/vendor/bullet/src
+# Install script for directory: /Users/zackpudil/Projects/raymarcher/vendor/bullet/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,24 +29,24 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/bullet" TYPE FILE FILES
-    "/Users/zackpudil/Projects/raytracer/vendor/bullet/src/btBulletCollisionCommon.h"
-    "/Users/zackpudil/Projects/raytracer/vendor/bullet/src/btBulletDynamicsCommon.h"
+    "/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/btBulletCollisionCommon.h"
+    "/Users/zackpudil/Projects/raymarcher/vendor/bullet/src/btBulletDynamicsCommon.h"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Dynamics/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Collision/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Geometry/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3Common/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletInverseDynamics/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletCollision/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletDynamics/cmake_install.cmake")
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/LinearMath/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Serialize/Bullet2FileLoader/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Dynamics/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Collision/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Geometry/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3Common/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletInverseDynamics/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletCollision/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletDynamics/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/LinearMath/cmake_install.cmake")
 
 endif()
 

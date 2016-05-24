@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zackpudil/Projects/raytracer/vendor/bullet
+# Install script for directory: /Users/zackpudil/Projects/raymarcher/vendor/bullet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,19 +28,19 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/zackpudil/Projects/raytracer/build/vendor/bullet/bullet.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/bullet.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/bullet" TYPE FILE FILES
-    "/Users/zackpudil/Projects/raytracer/vendor/bullet/UseBullet.cmake"
-    "/Users/zackpudil/Projects/raytracer/build/vendor/bullet/BulletConfig.cmake"
+    "/Users/zackpudil/Projects/raymarcher/vendor/bullet/UseBullet.cmake"
+    "/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/BulletConfig.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/cmake_install.cmake")
+  include("/Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/cmake_install.cmake")
 
 endif()
 

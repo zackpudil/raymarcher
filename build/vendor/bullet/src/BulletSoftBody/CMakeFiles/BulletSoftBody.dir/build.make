@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 # Include any dependencies generated for this target.
 include vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/depend.make
@@ -59,16 +59,16 @@ include vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.mak
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o: ../vendor/bullet/src/BulletSoftBody/btSoftBody.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftBody.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBody.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftBody.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBody.cpp
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BulletSoftBody.dir/btSoftBody.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBody.cpp > CMakeFiles/BulletSoftBody.dir/btSoftBody.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBody.cpp > CMakeFiles/BulletSoftBody.dir/btSoftBody.i
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BulletSoftBody.dir/btSoftBody.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBody.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftBody.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBody.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftBody.s
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o.requires:
 
@@ -83,16 +83,16 @@ vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o.prov
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o: ../vendor/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp > CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp > CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.i
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.s
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o.requires:
 
@@ -107,16 +107,16 @@ vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcave
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o: ../vendor/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp > CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp > CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.i
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.s
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o.requires:
 
@@ -131,16 +131,16 @@ vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o: ../vendor/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp > CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp > CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.i
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.s
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o.requires:
 
@@ -155,16 +155,16 @@ vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBo
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o: ../vendor/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp > CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp > CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.i
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.s
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o.requires:
 
@@ -179,16 +179,16 @@ vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollis
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o: ../vendor/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp > CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp > CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.i
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.s
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o.requires:
 
@@ -203,16 +203,16 @@ vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynami
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o: ../vendor/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp > CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp > CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.i
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp -o CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.s
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o.requires:
 
@@ -227,16 +227,16 @@ vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisi
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o: ../vendor/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o -c /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o -c /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.i"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp > CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp > CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.i
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.s"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp -o CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp -o CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.s
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o.requires:
 
@@ -273,9 +273,9 @@ vendor/bullet/src/BulletSoftBody/libBulletSoftBody.a: vendor/bullet/src/BulletSo
 vendor/bullet/src/BulletSoftBody/libBulletSoftBody.a: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o
 vendor/bullet/src/BulletSoftBody/libBulletSoftBody.a: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make
 vendor/bullet/src/BulletSoftBody/libBulletSoftBody.a: vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libBulletSoftBody.a"
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && $(CMAKE_COMMAND) -P CMakeFiles/BulletSoftBody.dir/cmake_clean_target.cmake
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BulletSoftBody.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zackpudil/Projects/raymarcher/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libBulletSoftBody.a"
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && $(CMAKE_COMMAND) -P CMakeFiles/BulletSoftBody.dir/cmake_clean_target.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BulletSoftBody.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build: vendor/bullet/src/BulletSoftBody/libBulletSoftBody.a
@@ -294,10 +294,10 @@ vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/requires: vendor/
 .PHONY : vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/requires
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/clean:
-	cd /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody && $(CMAKE_COMMAND) -P CMakeFiles/BulletSoftBody.dir/cmake_clean.cmake
+	cd /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody && $(CMAKE_COMMAND) -P CMakeFiles/BulletSoftBody.dir/cmake_clean.cmake
 .PHONY : vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/clean
 
 vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raytracer /Users/zackpudil/Projects/raytracer/vendor/bullet/src/BulletSoftBody /Users/zackpudil/Projects/raytracer/build /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zackpudil/Projects/raymarcher /Users/zackpudil/Projects/raymarcher/vendor/bullet/src/BulletSoftBody /Users/zackpudil/Projects/raymarcher/build /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vendor/bullet/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/depend
 

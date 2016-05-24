@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.4.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raytracer
+CMAKE_SOURCE_DIR = /Users/zackpudil/Projects/raymarcher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raytracer/build
+CMAKE_BINARY_DIR = /Users/zackpudil/Projects/raymarcher/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles /Users/zackpudil/Projects/raytracer/build/vendor/bullet/src/Bullet3OpenCL/CMakeFiles/progress.marks
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raytracer/build/CMakeFiles 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles /Users/zackpudil/Projects/raymarcher/build/vendor/bullet/src/Bullet3OpenCL/CMakeFiles/progress.marks
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zackpudil/Projects/raymarcher/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/clean
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/preinstall
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/rule:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/rule
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f CMakeFiles/Makefile2 vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/rule
 .PHONY : vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/rule
 
 # Convenience name for target.
@@ -166,457 +166,457 @@ Bullet3OpenCL_clew: vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_cle
 
 # fast build rule for target.
 Bullet3OpenCL_clew/fast:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build
 .PHONY : Bullet3OpenCL_clew/fast
 
 # target to build an object file
 BroadphaseCollision/b3GpuGridBroadphase.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.o
 .PHONY : BroadphaseCollision/b3GpuGridBroadphase.o
 
 # target to preprocess a source file
 BroadphaseCollision/b3GpuGridBroadphase.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.i
 .PHONY : BroadphaseCollision/b3GpuGridBroadphase.i
 
 # target to generate assembly for a file
 BroadphaseCollision/b3GpuGridBroadphase.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuGridBroadphase.s
 .PHONY : BroadphaseCollision/b3GpuGridBroadphase.s
 
 # target to build an object file
 BroadphaseCollision/b3GpuParallelLinearBvh.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.o
 .PHONY : BroadphaseCollision/b3GpuParallelLinearBvh.o
 
 # target to preprocess a source file
 BroadphaseCollision/b3GpuParallelLinearBvh.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.i
 .PHONY : BroadphaseCollision/b3GpuParallelLinearBvh.i
 
 # target to generate assembly for a file
 BroadphaseCollision/b3GpuParallelLinearBvh.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvh.s
 .PHONY : BroadphaseCollision/b3GpuParallelLinearBvh.s
 
 # target to build an object file
 BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o
 .PHONY : BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.o
 
 # target to preprocess a source file
 BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.i
 .PHONY : BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.i
 
 # target to generate assembly for a file
 BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.s
 .PHONY : BroadphaseCollision/b3GpuParallelLinearBvhBroadphase.s
 
 # target to build an object file
 BroadphaseCollision/b3GpuSapBroadphase.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.o
 .PHONY : BroadphaseCollision/b3GpuSapBroadphase.o
 
 # target to preprocess a source file
 BroadphaseCollision/b3GpuSapBroadphase.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.i
 .PHONY : BroadphaseCollision/b3GpuSapBroadphase.i
 
 # target to generate assembly for a file
 BroadphaseCollision/b3GpuSapBroadphase.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/BroadphaseCollision/b3GpuSapBroadphase.s
 .PHONY : BroadphaseCollision/b3GpuSapBroadphase.s
 
 # target to build an object file
 Initialize/b3OpenCLUtils.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.o
 .PHONY : Initialize/b3OpenCLUtils.o
 
 # target to preprocess a source file
 Initialize/b3OpenCLUtils.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.i
 .PHONY : Initialize/b3OpenCLUtils.i
 
 # target to generate assembly for a file
 Initialize/b3OpenCLUtils.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Initialize/b3OpenCLUtils.s
 .PHONY : Initialize/b3OpenCLUtils.s
 
 # target to build an object file
 NarrowphaseCollision/b3ContactCache.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.o
 .PHONY : NarrowphaseCollision/b3ContactCache.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3ContactCache.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.i
 .PHONY : NarrowphaseCollision/b3ContactCache.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3ContactCache.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ContactCache.s
 .PHONY : NarrowphaseCollision/b3ContactCache.s
 
 # target to build an object file
 NarrowphaseCollision/b3ConvexHullContact.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.o
 .PHONY : NarrowphaseCollision/b3ConvexHullContact.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3ConvexHullContact.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.i
 .PHONY : NarrowphaseCollision/b3ConvexHullContact.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3ConvexHullContact.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3ConvexHullContact.s
 .PHONY : NarrowphaseCollision/b3ConvexHullContact.s
 
 # target to build an object file
 NarrowphaseCollision/b3GjkEpa.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.o
 .PHONY : NarrowphaseCollision/b3GjkEpa.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3GjkEpa.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.i
 .PHONY : NarrowphaseCollision/b3GjkEpa.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3GjkEpa.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkEpa.s
 .PHONY : NarrowphaseCollision/b3GjkEpa.s
 
 # target to build an object file
 NarrowphaseCollision/b3GjkPairDetector.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.o
 .PHONY : NarrowphaseCollision/b3GjkPairDetector.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3GjkPairDetector.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.i
 .PHONY : NarrowphaseCollision/b3GjkPairDetector.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3GjkPairDetector.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3GjkPairDetector.s
 .PHONY : NarrowphaseCollision/b3GjkPairDetector.s
 
 # target to build an object file
 NarrowphaseCollision/b3OptimizedBvh.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.o
 .PHONY : NarrowphaseCollision/b3OptimizedBvh.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3OptimizedBvh.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.i
 .PHONY : NarrowphaseCollision/b3OptimizedBvh.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3OptimizedBvh.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3OptimizedBvh.s
 .PHONY : NarrowphaseCollision/b3OptimizedBvh.s
 
 # target to build an object file
 NarrowphaseCollision/b3QuantizedBvh.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.o
 .PHONY : NarrowphaseCollision/b3QuantizedBvh.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3QuantizedBvh.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.i
 .PHONY : NarrowphaseCollision/b3QuantizedBvh.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3QuantizedBvh.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3QuantizedBvh.s
 .PHONY : NarrowphaseCollision/b3QuantizedBvh.s
 
 # target to build an object file
 NarrowphaseCollision/b3StridingMeshInterface.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.o
 .PHONY : NarrowphaseCollision/b3StridingMeshInterface.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3StridingMeshInterface.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.i
 .PHONY : NarrowphaseCollision/b3StridingMeshInterface.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3StridingMeshInterface.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3StridingMeshInterface.s
 .PHONY : NarrowphaseCollision/b3StridingMeshInterface.s
 
 # target to build an object file
 NarrowphaseCollision/b3TriangleCallback.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.o
 .PHONY : NarrowphaseCollision/b3TriangleCallback.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3TriangleCallback.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.i
 .PHONY : NarrowphaseCollision/b3TriangleCallback.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3TriangleCallback.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleCallback.s
 .PHONY : NarrowphaseCollision/b3TriangleCallback.s
 
 # target to build an object file
 NarrowphaseCollision/b3TriangleIndexVertexArray.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.o
 .PHONY : NarrowphaseCollision/b3TriangleIndexVertexArray.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3TriangleIndexVertexArray.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.i
 .PHONY : NarrowphaseCollision/b3TriangleIndexVertexArray.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3TriangleIndexVertexArray.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3TriangleIndexVertexArray.s
 .PHONY : NarrowphaseCollision/b3TriangleIndexVertexArray.s
 
 # target to build an object file
 NarrowphaseCollision/b3VoronoiSimplexSolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.o
 .PHONY : NarrowphaseCollision/b3VoronoiSimplexSolver.o
 
 # target to preprocess a source file
 NarrowphaseCollision/b3VoronoiSimplexSolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.i
 .PHONY : NarrowphaseCollision/b3VoronoiSimplexSolver.i
 
 # target to generate assembly for a file
 NarrowphaseCollision/b3VoronoiSimplexSolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/NarrowphaseCollision/b3VoronoiSimplexSolver.s
 .PHONY : NarrowphaseCollision/b3VoronoiSimplexSolver.s
 
 # target to build an object file
 ParallelPrimitives/b3BoundSearchCL.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.o
 .PHONY : ParallelPrimitives/b3BoundSearchCL.o
 
 # target to preprocess a source file
 ParallelPrimitives/b3BoundSearchCL.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.i
 .PHONY : ParallelPrimitives/b3BoundSearchCL.i
 
 # target to generate assembly for a file
 ParallelPrimitives/b3BoundSearchCL.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3BoundSearchCL.s
 .PHONY : ParallelPrimitives/b3BoundSearchCL.s
 
 # target to build an object file
 ParallelPrimitives/b3FillCL.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.o
 .PHONY : ParallelPrimitives/b3FillCL.o
 
 # target to preprocess a source file
 ParallelPrimitives/b3FillCL.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.i
 .PHONY : ParallelPrimitives/b3FillCL.i
 
 # target to generate assembly for a file
 ParallelPrimitives/b3FillCL.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3FillCL.s
 .PHONY : ParallelPrimitives/b3FillCL.s
 
 # target to build an object file
 ParallelPrimitives/b3LauncherCL.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.o
 .PHONY : ParallelPrimitives/b3LauncherCL.o
 
 # target to preprocess a source file
 ParallelPrimitives/b3LauncherCL.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.i
 .PHONY : ParallelPrimitives/b3LauncherCL.i
 
 # target to generate assembly for a file
 ParallelPrimitives/b3LauncherCL.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3LauncherCL.s
 .PHONY : ParallelPrimitives/b3LauncherCL.s
 
 # target to build an object file
 ParallelPrimitives/b3PrefixScanCL.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.o
 .PHONY : ParallelPrimitives/b3PrefixScanCL.o
 
 # target to preprocess a source file
 ParallelPrimitives/b3PrefixScanCL.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.i
 .PHONY : ParallelPrimitives/b3PrefixScanCL.i
 
 # target to generate assembly for a file
 ParallelPrimitives/b3PrefixScanCL.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanCL.s
 .PHONY : ParallelPrimitives/b3PrefixScanCL.s
 
 # target to build an object file
 ParallelPrimitives/b3PrefixScanFloat4CL.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.o
 .PHONY : ParallelPrimitives/b3PrefixScanFloat4CL.o
 
 # target to preprocess a source file
 ParallelPrimitives/b3PrefixScanFloat4CL.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.i
 .PHONY : ParallelPrimitives/b3PrefixScanFloat4CL.i
 
 # target to generate assembly for a file
 ParallelPrimitives/b3PrefixScanFloat4CL.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3PrefixScanFloat4CL.s
 .PHONY : ParallelPrimitives/b3PrefixScanFloat4CL.s
 
 # target to build an object file
 ParallelPrimitives/b3RadixSort32CL.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.o
 .PHONY : ParallelPrimitives/b3RadixSort32CL.o
 
 # target to preprocess a source file
 ParallelPrimitives/b3RadixSort32CL.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.i
 .PHONY : ParallelPrimitives/b3RadixSort32CL.i
 
 # target to generate assembly for a file
 ParallelPrimitives/b3RadixSort32CL.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/ParallelPrimitives/b3RadixSort32CL.s
 .PHONY : ParallelPrimitives/b3RadixSort32CL.s
 
 # target to build an object file
 Raycast/b3GpuRaycast.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.o
 .PHONY : Raycast/b3GpuRaycast.o
 
 # target to preprocess a source file
 Raycast/b3GpuRaycast.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.i
 .PHONY : Raycast/b3GpuRaycast.i
 
 # target to generate assembly for a file
 Raycast/b3GpuRaycast.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/Raycast/b3GpuRaycast.s
 .PHONY : Raycast/b3GpuRaycast.s
 
 # target to build an object file
 RigidBody/b3GpuGenericConstraint.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.o
 .PHONY : RigidBody/b3GpuGenericConstraint.o
 
 # target to preprocess a source file
 RigidBody/b3GpuGenericConstraint.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.i
 .PHONY : RigidBody/b3GpuGenericConstraint.i
 
 # target to generate assembly for a file
 RigidBody/b3GpuGenericConstraint.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuGenericConstraint.s
 .PHONY : RigidBody/b3GpuGenericConstraint.s
 
 # target to build an object file
 RigidBody/b3GpuJacobiContactSolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.o
 .PHONY : RigidBody/b3GpuJacobiContactSolver.o
 
 # target to preprocess a source file
 RigidBody/b3GpuJacobiContactSolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.i
 .PHONY : RigidBody/b3GpuJacobiContactSolver.i
 
 # target to generate assembly for a file
 RigidBody/b3GpuJacobiContactSolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuJacobiContactSolver.s
 .PHONY : RigidBody/b3GpuJacobiContactSolver.s
 
 # target to build an object file
 RigidBody/b3GpuNarrowPhase.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.o
 .PHONY : RigidBody/b3GpuNarrowPhase.o
 
 # target to preprocess a source file
 RigidBody/b3GpuNarrowPhase.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.i
 .PHONY : RigidBody/b3GpuNarrowPhase.i
 
 # target to generate assembly for a file
 RigidBody/b3GpuNarrowPhase.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuNarrowPhase.s
 .PHONY : RigidBody/b3GpuNarrowPhase.s
 
 # target to build an object file
 RigidBody/b3GpuPgsConstraintSolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.o
 .PHONY : RigidBody/b3GpuPgsConstraintSolver.o
 
 # target to preprocess a source file
 RigidBody/b3GpuPgsConstraintSolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.i
 .PHONY : RigidBody/b3GpuPgsConstraintSolver.i
 
 # target to generate assembly for a file
 RigidBody/b3GpuPgsConstraintSolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsConstraintSolver.s
 .PHONY : RigidBody/b3GpuPgsConstraintSolver.s
 
 # target to build an object file
 RigidBody/b3GpuPgsContactSolver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.o
 .PHONY : RigidBody/b3GpuPgsContactSolver.o
 
 # target to preprocess a source file
 RigidBody/b3GpuPgsContactSolver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.i
 .PHONY : RigidBody/b3GpuPgsContactSolver.i
 
 # target to generate assembly for a file
 RigidBody/b3GpuPgsContactSolver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuPgsContactSolver.s
 .PHONY : RigidBody/b3GpuPgsContactSolver.s
 
 # target to build an object file
 RigidBody/b3GpuRigidBodyPipeline.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.o
 .PHONY : RigidBody/b3GpuRigidBodyPipeline.o
 
 # target to preprocess a source file
 RigidBody/b3GpuRigidBodyPipeline.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.i
 .PHONY : RigidBody/b3GpuRigidBodyPipeline.i
 
 # target to generate assembly for a file
 RigidBody/b3GpuRigidBodyPipeline.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3GpuRigidBodyPipeline.s
 .PHONY : RigidBody/b3GpuRigidBodyPipeline.s
 
 # target to build an object file
 RigidBody/b3Solver.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.o
 .PHONY : RigidBody/b3Solver.o
 
 # target to preprocess a source file
 RigidBody/b3Solver.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.i
 .PHONY : RigidBody/b3Solver.i
 
 # target to generate assembly for a file
 RigidBody/b3Solver.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/RigidBody/b3Solver.s
 .PHONY : RigidBody/b3Solver.s
 
 # target to build an object file
 __/clew/clew.o:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.o
 .PHONY : __/clew/clew.o
 
 # target to preprocess a source file
 __/clew/clew.i:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.i
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.i
 .PHONY : __/clew/clew.i
 
 # target to generate assembly for a file
 __/clew/clew.s:
-	cd /Users/zackpudil/Projects/raytracer/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.s
+	cd /Users/zackpudil/Projects/raymarcher/build && $(MAKE) -f vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/build.make vendor/bullet/src/Bullet3OpenCL/CMakeFiles/Bullet3OpenCL_clew.dir/__/clew/clew.s
 .PHONY : __/clew/clew.s
 
 # Help Target
@@ -733,6 +733,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/zackpudil/Projects/raytracer/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zackpudil/Projects/raymarcher/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

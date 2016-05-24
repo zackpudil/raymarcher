@@ -5,13 +5,13 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 C_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk  
 
-C_DEFINES = -DGLFW_INCLUDE_NONE -DMAKE_BUILD_TYPE=Debug -DPROJECT_SOURCE_DIR=\"/Users/zackpudil/Projects/raytracer/src\"
+C_DEFINES = -DGLFW_INCLUDE_NONE -DMAKE_BUILD_TYPE=Debug -DPROJECT_SOURCE_DIR=\"/Users/zackpudil/Projects/raymarcher/src\"
 
-C_INCLUDES = -I/Users/zackpudil/Projects/raytracer/src/headers -I/Users/zackpudil/Projects/raytracer/vendor/assimp/include -I/Users/zackpudil/Projects/raytracer/vendor/bullet/src -I/Users/zackpudil/Projects/raytracer/vendor/glad/include -I/Users/zackpudil/Projects/raytracer/vendor/glfw/include -I/Users/zackpudil/Projects/raytracer/vendor/glm -I/Users/zackpudil/Projects/raytracer/vendor/stb 
+C_INCLUDES = -I/Users/zackpudil/Projects/raymarcher/src/headers -I/Users/zackpudil/Projects/raymarcher/vendor/assimp/include -I/Users/zackpudil/Projects/raymarcher/vendor/bullet/src -I/Users/zackpudil/Projects/raymarcher/vendor/glad/include -I/Users/zackpudil/Projects/raymarcher/vendor/glfw/include -I/Users/zackpudil/Projects/raymarcher/vendor/glm -I/Users/zackpudil/Projects/raymarcher/vendor/stb 
 
 CXX_FLAGS =  -Wall -Wextra -Wpedantic -std=c++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk  
 
-CXX_DEFINES = -DGLFW_INCLUDE_NONE -DMAKE_BUILD_TYPE=Debug -DPROJECT_SOURCE_DIR=\"/Users/zackpudil/Projects/raytracer/src\"
+CXX_DEFINES = -DGLFW_INCLUDE_NONE -DMAKE_BUILD_TYPE=Debug -DPROJECT_SOURCE_DIR=\"/Users/zackpudil/Projects/raymarcher/src\"
 
-CXX_INCLUDES = -I/Users/zackpudil/Projects/raytracer/src/headers -I/Users/zackpudil/Projects/raytracer/vendor/assimp/include -I/Users/zackpudil/Projects/raytracer/vendor/bullet/src -I/Users/zackpudil/Projects/raytracer/vendor/glad/include -I/Users/zackpudil/Projects/raytracer/vendor/glfw/include -I/Users/zackpudil/Projects/raytracer/vendor/glm -I/Users/zackpudil/Projects/raytracer/vendor/stb 
+CXX_INCLUDES = -I/Users/zackpudil/Projects/raymarcher/src/headers -I/Users/zackpudil/Projects/raymarcher/vendor/assimp/include -I/Users/zackpudil/Projects/raymarcher/vendor/bullet/src -I/Users/zackpudil/Projects/raymarcher/vendor/glad/include -I/Users/zackpudil/Projects/raymarcher/vendor/glfw/include -I/Users/zackpudil/Projects/raymarcher/vendor/glm -I/Users/zackpudil/Projects/raymarcher/vendor/stb 
 

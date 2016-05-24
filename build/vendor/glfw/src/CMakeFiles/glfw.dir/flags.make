@@ -6,5 +6,5 @@ C_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/zackpudil/Projects/raytracer/vendor/glfw/src -I/Users/zackpudil/Projects/raytracer/build/vendor/glfw/src 
+C_INCLUDES = -I/Users/zackpudil/Projects/raymarcher/vendor/glfw/src -I/Users/zackpudil/Projects/raymarcher/build/vendor/glfw/src 
 
