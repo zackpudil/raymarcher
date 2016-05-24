@@ -91,7 +91,7 @@ int main() {
       scenes.push_back(s);
     }
 
-    int activeScene = 0;
+    uint activeScene = 0;
 
     Shader imageShader;
     imageShader
