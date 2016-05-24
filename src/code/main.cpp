@@ -82,7 +82,7 @@ int main() {
     glBindVertexArray(0);
 
     std::vector<Shader*> scenes;
-    for(int i = 0; i <= 4; i++) {
+    for(int i = 0; i <= 6; i++) {
       Shader* s = new Shader();
       s->attach("vert.vert")
         .attach("scene_" + std::to_string(i + 1) + ".frag")
@@ -116,6 +116,7 @@ int main() {
         } else if(glfwGetKey(mWindow, GLFW_KEY_ENTER) == GLFW_RELEASE && enterhit) {
           activeScene++;
           if(activeScene >= scenes.size()) activeScene = 0;
+          glfwSetTime(0);
           enterhit = false;
         }
 
