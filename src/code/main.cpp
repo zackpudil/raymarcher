@@ -12,7 +12,6 @@
 #include <shader.hpp>
 
 int main() {
-
     // Load GLFW and Create a Window
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -50,8 +49,8 @@ int main() {
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, mWidth/2, mHeight/2, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture, 0);
 
@@ -81,17 +80,11 @@ int main() {
       glBindVertexArray(0);
     glBindVertexArray(0);
 
-    std::vector<Shader*> scenes;
-    for(int i = 0; i <= 6; i++) {
-      Shader* s = new Shader();
-      s->attach("vert.vert")
-        .attach("scene_" + std::to_string(i + 1) + ".frag")
-        .link();
-
-      scenes.push_back(s);
-    }
-
-    uint activeScene = 0;
+    Shader sceneShader;
+    sceneShader
+      .attach("vert.vert")
+      .attach("scenes/creepy_forest.frag")
+      .link();
 
     Shader imageShader;
     imageShader
@@ -100,7 +93,6 @@ int main() {
       .link();
 
     glm::vec2 res(mWidth/2, mHeight/2);
-    bool enterhit = false;
 
     // Rendering Loop
     while (glfwWindowShouldClose(mWindow) == false) {
@@ -110,16 +102,6 @@ int main() {
         if(glfwGetKey(mWindow, GLFW_KEY_SPACE) == GLFW_PRESS)
             glfwSetTime(0);
 
-
-        if(glfwGetKey(mWindow, GLFW_KEY_ENTER) == GLFW_PRESS) {
-          enterhit = true;
-        } else if(glfwGetKey(mWindow, GLFW_KEY_ENTER) == GLFW_RELEASE && enterhit) {
-          activeScene++;
-          if(activeScene >= scenes.size()) activeScene = 0;
-          glfwSetTime(0);
-          enterhit = false;
-        }
-
         glBindVertexArray(vao);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
 
@@ -127,9 +109,8 @@ int main() {
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glViewport(0, 0, mWidth/2, mHeight/2);
-
-        scenes[activeScene]->activate()
+        sceneShader
+          .activate()
           .bind("resolution", res)
           .bind("time", (float)glfwGetTime());
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);

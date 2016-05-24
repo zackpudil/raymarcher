@@ -7,16 +7,12 @@ uniform float time;
 
 #define PI 3.14159
 
-vec2 hash(vec2 n) {
-  vec2 x = vec2(
-    dot(n, vec2(171.0, 311.0)),
-    dot(n, vec2(269.0, 382.0)));
-  
-  return fract(sin(x)*43578.5453);
-}
-
 float hash(float n) {
   return fract(sin(n)*43758.5453);
+}
+
+float hash2(vec2 n) {
+    return fract(sin(dot(n, vec2(12.989, 71.233)))*43758.5453);
 }
 
 float noise(vec3 x) {
@@ -42,7 +38,7 @@ float fbm(vec3 p) {
   float f = 0.0;
   
   f += 0.5000*noise(p); p *= 2.03;
-  f += 0.2500*noise(p); p *= 2.07;
+  f += 0.2500*noise(p); p *= 2.04;
   f += 0.1250*noise(p); p *= 2.01;
   f += 0.0625*noise(p);
   f /= 0.9375;
@@ -67,7 +63,7 @@ vec4 volumetric(vec3 ro, vec3 rd, float md, vec2 p) {
   float s = 0.05, t = 0.0;
   vec4 sum = vec4(0);
   
-  t += 0.1*hash(p).x;
+  t += 0.1*hash2(p);
   
   for(int i = 0; i < 100; i++) {
     if(sum.a > 0.99) continue;

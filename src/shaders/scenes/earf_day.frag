@@ -8,7 +8,7 @@ uniform float time;
 const float TMAX = 20.0;
 
 float hash(float n) {
-	return fract(sin(n)*43758.54831);
+  return fract(sin(n)*43758.5453);
 }
 
 float hash2(vec2 n) {
@@ -16,36 +16,34 @@ float hash2(vec2 n) {
 }
 
 float noise(vec3 x) {
-	vec3 p = floor(x);
-	vec3 f = fract(x);
-	
-	f = f*f*(3.0 - f*2.0);
-	
-	float n = p.x + p.y*57.0 + p.z*113.0;
-	
-	return mix(
-		mix(
-			mix(hash(n + 000.0), hash(n + 001.0), f.x),
-			mix(hash(n + 057.0), hash(n + 58.0), f.x),
-			f.y),
-		mix(
-			mix(hash(n + 113.0), hash(n + 114.0), f.x),
-			mix(hash(n + 170.0), hash(n + 171.0), f.x),
-			f.y),
-		f.z);
+  vec3 p = floor(x);
+  vec3 f = fract(x);
+  
+  f = f*f*(3.0 - 2.0*f);
+  float n = p.x + p.y*57.0 + p.z*113.0;
+  
+  return mix(
+    mix(
+      mix(hash(n + 000.0), hash(n + 001.0), f.x),
+      mix(hash(n + 57.0), hash(n + 58.0), f.x),
+      f.y),
+    mix(
+      mix(hash(n + 113.0), hash(n + 114.0), f.x),
+      mix(hash(n + 170.0), hash(n + 171.0), f.x),
+      f.y),
+    f.z);
 }
 
 float fbm(vec3 p) {
-	float f = 0.0;
-	
-	f += 0.5000*noise(p); p *= 2.01;
-	f += 0.2500*noise(p); p *= 2.04;
-	f += 0.1250*noise(p); p *= 2.02;
-	f += 0.0625*noise(p);
-	
-	f /= 0.9375;
-	
-	return f;
+  float f = 0.0;
+  
+  f += 0.5000*noise(p); p *= 2.03;
+  f += 0.2500*noise(p); p *= 2.04;
+  f += 0.1250*noise(p); p *= 2.01;
+  f += 0.0625*noise(p);
+  f /= 0.9375;
+  
+  return f;
 }
 
 void rotate(inout vec2 p, float a) {
