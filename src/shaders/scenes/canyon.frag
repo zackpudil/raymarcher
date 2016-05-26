@@ -15,6 +15,16 @@ float hash(float n) {
 	return fract(sin(n)*43758.5453);
 }
 
+vec3 hash(vec3 x) {
+	vec3 n = vec3(
+		dot(x, vec3(171.0, 311.0, 57.0)),
+		dot(x, vec3(269.0, 382.0, 113.0)),
+		dot(x, vec3(129.0, 234.0, 170.0))
+	);
+
+	return fract(sin(n)*43758.5453);
+}
+
 float noise(vec3 g) {
 	vec3 p = floor(g);
 	vec3 f = fract(g);
@@ -71,6 +81,23 @@ float fbm(vec3 p) {
 	return f;
 }
 
+float voronoi(vec3 x) {
+	vec3 p = floor(x);
+	vec3 f = fract(x);
+
+	float d = 8.0;
+	for(int i = -1; i <= 1; i++)
+	for(int j = -1; j <= 1; j++) 
+	for(int k = -1; k <= 1; k++) {
+		vec3 g = vec3(float(i), float(j), float(k));
+		vec3 r = g + hash(p + g) - f;
+
+		d = min(d, dot(r, r));
+	}
+
+	return sqrt(d);
+}
+
 float len(vec3 p, float l) {
 	p = pow(abs(p), vec3(l));
 	return pow(p.x + p.y + p.z, 1.0/l);
@@ -88,13 +115,10 @@ vec2 segment(vec3 p, vec3 a, vec3 b) {
 float smin(float a, float b, float k) {
 	float res = exp(-k*a) + exp(-k*b);
 	return -log(res)/k;
-}
-
-float map(vec3 p) {
+}float map(vec3 p) {
 	return p.y + 1.0  
-		- 0.1*smoothstep(0.5, 1.0, noise(p))*fbm(70.0*p) //grass
-		- smoothstep(0.4, 0.7, fbm(2.0*p.xz)) // mountains
-		- 0.8*noise(p); // hills
+		- 0.8*noise(p) // hills
+		- smoothstep(0.4, 0.7, fbm(2.0*p.xz)); // mountains
 }
 
 float march(vec3 ro, vec3 rd) {
@@ -118,22 +142,30 @@ vec3 normal(vec3 p) {
 	);
 
 	float f = 10.0;
-	vec3 b = vec3(
+	vec3 b = 0.1*vec3(
+		voronoi(f*(p + h.xyy)) - voronoi(f*(p - h.xyy)),
+		voronoi(f*(p + h.yxy)) - voronoi(f*(p - h.yxy)),
+		voronoi(f*(p + h.yyx)) - voronoi(f*(p - h.yyx))
+	);
+
+	f = 70.0; 
+	b += 0.1*smoothstep(0.5, 1.0, noise(p))*vec3(
 		fbm(f*(p + h.xyy)) - fbm(f*(p - h.xyy)),
 		fbm(f*(p + h.yxy)) - fbm(f*(p - h.yxy)),
 		fbm(f*(p + h.yyx)) - fbm(f*(p - h.yyx))
 	);
-	return normalize(n + 0.1*b);
+
+	return normalize(n + b);
 }
 
 float ao(vec3 p, vec3 n) {
-	float s = 0.006, t = s;
+	float s = 0.005, t = s;
 	float o = 0.0, w = 1.0;
 
 	for(int i = 0; i < 25; i++) {
 		float d = map(p + n*t);
 		o += (t - d)*w;
-		w *= 0.90;
+		w *= 0.80;
 		t += s;
 	}
 
@@ -179,7 +211,7 @@ void main() {
 
 		col *= vec3(ao(pos, nor));
 
-		col = mix(col, vec3(0.5), 1.0 - exp(-0.2*i));
+		col = mix(col, vec3(0.2), 1.0 - exp(-0.3*i));
 	}
 
 	fragColor = vec4(col, 1);
