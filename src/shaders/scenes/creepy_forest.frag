@@ -34,12 +34,16 @@ float noise(vec3 x) {
     f.z);
 }
 
+const mat3 m3 = mat3( 0.00,  0.80,  0.60,
+              -0.80,  0.36, -0.48,
+              -0.60, -0.48,  0.64 );
+
 float fbm(vec3 p) {
   float f = 0.0;
   
-  f += 0.5000*noise(p); p *= 2.03;
-  f += 0.2500*noise(p); p *= 2.04;
-  f += 0.1250*noise(p); p *= 2.01;
+  f += 0.5000*noise(p); p *= m3*2.03;
+  f += 0.2500*noise(p); p *= m3*2.04;
+  f += 0.1250*noise(p); p *= m3*2.01;
   f += 0.0625*noise(p);
   f /= 0.9375;
   
@@ -89,7 +93,7 @@ float map(vec3 p) {
   q.z += 30.0;
   q = q + noise(q);
   float n = dot(cos(q*PI/2.0), sin(q.yzx*PI/2.0));
-  float s =  .45 - .45*n + 0.1*fbm(10.0*p) - 0.2*smoothstep(0.1, 1.0, noise(3.0*p))*fbm(50.0*p);
+  float s =  .45 - .45*n + 0.1*fbm(10.0*p) - 0.15*smoothstep(0.4, 1.0, noise(3.0*p))*fbm(60.0*p);
   
   return smin(p.y + 1.2, s, 10.0);
 }
@@ -97,10 +101,10 @@ float map(vec3 p) {
 float march(vec3 ro, vec3 rd) {
   float t = 0.0;
   
-  for(int i = 0; i < 75; i++) {
+  for(int i = 0; i < 200; i++) {
     float h = map(ro + rd*t);
     if(abs(h) < 0.001 || t >= 10.0) break;
-    t += h*0.75;
+    t += h*0.25;
   }
   
   return t;
@@ -163,18 +167,18 @@ void main() {
     vec3 rig = vec3(0, .5, 0);
     vec3 lig = normalize(pos - rig);
     
-    col  = 0.3*vec3(1);
-    col += 0.8*clamp(dot(lig, nor), 0.0, 1.0)*vec3(1);
+    col  = 0.2*vec3(1);
+    col += 0.7*clamp(dot(lig, nor), 0.0, 1.0)*vec3(1);
     
     vec3 mat = mix(vec3(0.62, 0.32, 0.17), vec3(0.0), fbm(10.0*pos*vec3(1.77, 0, 2.0)));
-    mat = mix(mat, vec3(0.2, 0.52, 0.2), smoothstep(0.1, 1.0, noise(3.0*pos)));
+    mat = mix(mat, vec3(0.2, 0.40, 0.2), smoothstep(0.4, 1.0, noise(3.0*pos)));
     
     col *= mat;
     col *= ao(pos, nor);
   }
   
   vec4 vol = volumetric(ro, rd, i, uv);
-  col = mix(col, vec3(0), 1.0 - exp(-0.39*i));
+  col = mix(col, vec3(0), 1.0 - exp(-0.7*i));
   col = mix(col, vol.rgb, vol.a);
   col = pow(col, vec3(.454545));
   

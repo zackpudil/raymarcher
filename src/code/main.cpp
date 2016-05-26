@@ -1,4 +1,4 @@
-// Local Headers
+/// Local Headers
 #include <main.hpp>
 
 // System Headers
@@ -83,7 +83,7 @@ int main() {
     Shader sceneShader;
     sceneShader
       .attach("vert.vert")
-      .attach("scenes/creepy_forest.frag")
+      .attach("scenes/canyon.frag")
       .link();
 
     Shader imageShader;
