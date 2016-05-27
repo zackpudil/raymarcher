@@ -98,24 +98,7 @@ float voronoi(vec3 x) {
 	return sqrt(d);
 }
 
-float len(vec3 p, float l) {
-	p = pow(abs(p), vec3(l));
-	return pow(p.x + p.y + p.z, 1.0/l);
-}
-
-vec2 segment(vec3 p, vec3 a, vec3 b) {
-	vec3 pa = p - a;
-	vec3 ba = b - a;
-
-	float h = clamp(dot(pa, ba)/dot(ba, ba), 0, 1);
-
-	return vec2(length(pa - ba*h), h);
-}
-
-float smin(float a, float b, float k) {
-	float res = exp(-k*a) + exp(-k*b);
-	return -log(res)/k;
-}float map(vec3 p) {
+float map(vec3 p) {
 	return p.y + 1.0  
 		- 0.8*noise(p) // hills
 		- smoothstep(0.4, 0.7, fbm(2.0*p.xz)); // mountains
@@ -131,6 +114,37 @@ float march(vec3 ro, vec3 rd) {
 	}
 
 	return t;
+}
+
+float volume(vec3 p) {
+	float d = -(p.y + 0.5);
+	d += 0.5*fbm(4.0*p + time);
+	d += 0.4*cos(2.0*p.x + time)*sin(2.0*p.z + time);
+	return clamp(d, 0.0, 1.0);
+}
+
+vec4 volumetric(vec3 ro, vec3 rd, float mt, vec2 p) {
+	float s = 0.05, t = 0.0;
+	vec4 sum = vec4(0);
+
+	t += 0.05*hash2(p);
+	for(int i = 0; i < 200; i++) {
+		if(sum.a > 1.00) break;
+		if(t > mt) break;
+
+		float d = volume(ro + rd*t);
+		vec4 c = vec4(mix(vec3(1), vec3(0.0, 0.4, 1.0), 1.0 - d), d);
+
+		c.a *= 5.0;
+		c.rgb *= c.a;
+		sum += c*(1.0 - sum.a);
+
+		t += s;
+	}
+
+	sum.rgb = mix(sum.rgb, vec3(1), 0.4*voronoi(2.0*(ro + rd*t)));
+
+	return clamp(sum, 0.0, 1.0);
 }
 
 vec3 normal(vec3 p) {
@@ -185,8 +199,7 @@ void main() {
 	uv.x *= resolution.x/resolution.y;
 
 	vec3 ro = vec3(0, 1.0 - 0.25*cos(time*0.5), time);
-	float g = smoothstep(-1.0, 1.0, 2.0*cos(time))*sign(cos(0.5*time));
-	vec3 rd = normalize(camera(ro, ro + vec3(5.0*g, -0.75, 3))*vec3(uv, 1.97));
+	vec3 rd = normalize(camera(ro, ro + vec3(0.0, -1.0, 3))*vec3(uv, 1.97));
 
 	vec3 col = vec3(0.2, 0.6, 1.0);
 
@@ -195,6 +208,7 @@ void main() {
 	if(i < tmax) {
 		vec3 pos = ro + rd*i;
 		vec3 nor = normal(pos);
+		vec3 ref = reflect(rd, nor);
 
 		vec3 lig = normalize(vec3(0.8, 0.7, -0.6));
 		vec3 gli = normalize(vec3(0, -1.0, 0.0));
@@ -204,15 +218,16 @@ void main() {
 		col += 0.1*clamp(dot(gli, nor), 0, 1);
 
 		col *= mix(
-			mix(vec3(0.59, 0.31, 0.1), vec3(0.33, 0.2, 0.0), fbm(3.0*pos)), 
+			mix(vec3(0.59, 0.31, 0.1), vec3(0.33, 0.2, 0.0), fbm(30.0*pos)), 
 			vec3(0.1, 0.4, 0.1), smoothstep(0, 1, 2.0*smoothstep(0.6, 1, noise(pos))));
-
-		col += 0.2*pow(clamp(1.0 + dot(rd, nor), 0, 1), 2);
 
 		col *= vec3(ao(pos, nor));
 
-		col = mix(col, vec3(0.2), 1.0 - exp(-0.3*i));
+		col = mix(col, vec3(1.0), 1.0 - exp(-0.05*i));
 	}
+
+	vec4 v = volumetric(ro, rd, i, uv);
+	col = mix(col, v.rgb, v.a);
 
 	fragColor = vec4(col, 1);
 }
