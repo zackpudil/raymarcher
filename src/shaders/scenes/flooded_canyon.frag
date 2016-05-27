@@ -155,16 +155,8 @@ vec3 normal(vec3 p) {
 		map(p + h.yyx) - map(p - h.yyx)
 	);
 
-	float s = smoothstep(0.5, 1.0, noise(p));
 	float f = 20.0;
-	vec3 b = 0.1*(1.0 - s)*vec3(
-		voronoi(f*(p + h.xyy)) - voronoi(f*(p - h.xyy)),
-		voronoi(f*(p + h.yxy)) - voronoi(f*(p - h.yxy)),
-		voronoi(f*(p + h.yyx)) - voronoi(f*(p - h.yyx))
-	);
-
-	f = 70.0; 
-	b += 0.2*s*vec3(
+	vec3 b = 0.1*vec3(
 		fbm(f*(p + h.xyy)) - fbm(f*(p - h.xyy)),
 		fbm(f*(p + h.yxy)) - fbm(f*(p - h.yxy)),
 		fbm(f*(p + h.yyx)) - fbm(f*(p - h.yyx))
@@ -218,9 +210,7 @@ void main() {
 		col += 0.7*clamp(dot(lig, nor), 0, 1);
 		col += 0.1*clamp(dot(gli, nor), 0, 1);
 
-		col *= mix(
-			mix(vec3(0.59, 0.31, 0.1), vec3(0.33, 0.2, 0.0), fbm(30.0*pos)), 
-			vec3(0.1, 0.4, 0.1), smoothstep(0, 1, 2.0*smoothstep(0.6, 1, noise(pos))));
+		col *= mix(vec3(0.59, 0.31, 0.1), vec3(0.33, 0.2, 0.0), fbm(30.0*pos)); 
 
 		col *= vec3(ao(pos, nor));
 
