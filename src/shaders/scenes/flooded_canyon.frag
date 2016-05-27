@@ -135,7 +135,7 @@ vec4 volumetric(vec3 ro, vec3 rd, float mt, vec2 p) {
 		float d = volume(ro + rd*t);
 		vec4 c = vec4(mix(vec3(1), vec3(0.0, 0.4, 1.0), 1.0 - d), d);
 
-		c.a *= 5.0;
+		c.a *= 10.0;
 		c.rgb *= c.a;
 		sum += c*(1.0 - sum.a);
 
