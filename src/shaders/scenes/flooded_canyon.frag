@@ -155,8 +155,8 @@ vec3 normal(vec3 p) {
 		map(p + h.yyx) - map(p - h.yyx)
 	);
 
-	float f = 20.0;
-	vec3 b = 0.1*vec3(
+	float f = 10.0;
+	vec3 b = 0.4*vec3(
 		fbm(f*(p + h.xyy)) - fbm(f*(p - h.xyy)),
 		fbm(f*(p + h.yxy)) - fbm(f*(p - h.yxy)),
 		fbm(f*(p + h.yyx)) - fbm(f*(p - h.yyx))
@@ -194,7 +194,7 @@ void main() {
 	vec3 ro = vec3(0, 1.0 - 0.25*cos(time*0.5), time);
 	vec3 rd = normalize(camera(ro, ro + vec3(0.0, -1.0, 3))*vec3(uv, 1.97));
 
-	vec3 col = vec3(0.2, 0.6, 1.0);
+	vec3 col = mix(vec3(0.2, 0.6, 1.0), vec3(1), smoothstep(0.4, 1.0, fbm(10.0*rd.xy)));
 
 	float i = march(ro, rd);
 
