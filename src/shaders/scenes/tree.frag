@@ -146,12 +146,10 @@ vec3 normal(vec3 p) {
 	);
 	vec3 b = vec3(0);
 
-	if(p.y + 1.0 - 2.0*noise(0.15*p) < 1.0) {
-		b = vec3(0);
-	} else {
-		vec3 f = vec3(2.0, 0.3, 2.0);
+	if(p.y + 1.0 - 2.0*noise(0.15*p) > 1.0) {
+		vec3 f = vec3(5.0, 0.3, 5.0);
 
-		b += 0.3*vec3(
+		b += 0.2*vec3(
 			fbm(p*f + h.xyy) - fbm(p*f - h.xyy),
 			fbm(p*f + h.yxy) - fbm(p*f - h.yxy),
 			fbm(p*f + h.yyx) - fbm(p*f - h.yyx)
@@ -163,7 +161,7 @@ vec3 normal(vec3 p) {
 
 float shadow(vec3 p, vec3 l) {
 	float res = 1.0;
-	float t = 0.002;
+	float t = 0.01;
 
 	for(int i = 0; i < 300; i++) {
 		float d = map(p + l*t);
@@ -187,9 +185,9 @@ void main() {
 	vec2 uv = -1.0 + 2.0*(gl_FragCoord.xy/resolution);
 	uv.x *= resolution.x/resolution.y;
 
-	vec3 col = vec3(0.5);
+	vec3 col = vec3(1.0);
 
-	vec3 ro = vec3(10.0, 10.0, time);
+	vec3 ro = vec3(10.0, 9.0, time);
 	vec3 rd = normalize(camera(ro, ro + vec3(-15.0, -10.0, 3))*vec3(uv, 1.97));
 
 	float i = march(ro, rd);
@@ -197,10 +195,10 @@ void main() {
 		vec3 pos = ro + rd*i;
 		vec3 nor = normal(pos);
 
-		vec3 lig = normalize(vec3(0.8, 0.7, 0.6));
+		vec3 lig = normalize(vec3(0.8, 1.0, 0.5));
 
 		col  = 0.2*vec3(1);
-		col += 0.7*clamp(dot(lig, nor), 0.0, 1.0);
+		col += 0.7*clamp(dot(lig, nor), 0.0, 1.0)*shadow(pos, lig);
 	}
 
 	fragColor = vec4(col, 1);
