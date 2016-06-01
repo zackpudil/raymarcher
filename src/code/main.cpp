@@ -83,7 +83,7 @@ int main() {
     Shader sceneShader;
     sceneShader
       .attach("vert.vert")
-      .attach("scenes/flooded_canyon.frag")
+      .attach("scenes/tree.frag")
       .link();
 
     Shader imageShader;
