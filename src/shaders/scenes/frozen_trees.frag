@@ -99,6 +99,7 @@ float map(vec3 p) {
 	p.y -= 2.0*noise(0.15*q);
 
 	p.z = mod(p.z + 6.0, 12.0) - 6.0;
+	p.x = mod(p.x + 12.0, 24.0) - 12.0;
 
 	rotate(p.xy, 0.1*noise(p.xz));
 	rotate(p.yz, 0.2*noise(p.xz));
@@ -117,12 +118,12 @@ float map(vec3 p) {
 	s = smoothstep(-30.0, 1.0, -p.y);
 	p.xz = -abs(p.xz) + g*s*0.5*p.y;
 
-	return smin(
+	return min(
 		segment(p, vec3(0, -3, 0), vec3(0, 5.5, 0)) - 0.5 
 			+ 0.20*smoothstep(1.0, 5.0, p.y) 
 			+ 0.25*smoothstep(2.0, 7.0, p.y)
 			+ 0.35*smoothstep(3.0, 10.0, p.y),
-		q.y + 1.0 - 2.0*noise(0.15*q), 2.0); 
+		q.y + 1.0 - 2.0*noise(0.15*q));
 }
 
 float march(vec3 ro, vec3 rd) {
@@ -144,15 +145,22 @@ vec3 normal(vec3 p) {
 		map(p + h.yxy) - map(p - h.yxy),
 		map(p + h.yyx) - map(p - h.yyx)
 	);
-	vec3 b = vec3(0);
 
-	if(p.y + 1.0 - 2.0*noise(0.15*p) > 1.0) {
-		vec3 f = vec3(5.0, 0.3, 5.0);
+	vec3 b = vec3(0);
+	if(p.y + 1.0 - 2.0*noise(0.15*p) > 0.1) {
+		vec3 f = vec3(10.0, 0.3, 10.0);
 
 		b += 0.2*vec3(
 			fbm(p*f + h.xyy) - fbm(p*f - h.xyy),
 			fbm(p*f + h.yxy) - fbm(p*f - h.yxy),
 			fbm(p*f + h.yyx) - fbm(p*f - h.yyx)
+		);
+	} else {
+		float f = 2.0;
+		b += 0.1*vec3(
+			fbm(f*(p + h.xyy)) - fbm(f*(p - h.xyy)),
+			fbm(f*(p + h.yxy)) - fbm(f*(p - h.yxy)),
+			fbm(f*(p + h.yyx)) - fbm(f*(p - h.yyx))
 		);
 	}
 
@@ -185,20 +193,34 @@ void main() {
 	vec2 uv = -1.0 + 2.0*(gl_FragCoord.xy/resolution);
 	uv.x *= resolution.x/resolution.y;
 
-	vec3 col = vec3(1.0);
+	vec3 col = mix(vec3(0.0, 0.6, 1.0), vec3(1), smoothstep(0.4, 1.0, fbm(3.0*uv)));
 
-	vec3 ro = vec3(10.0, 9.0, time);
-	vec3 rd = normalize(camera(ro, ro + vec3(-15.0, -10.0, 3))*vec3(uv, 1.97));
+	vec3 ro = vec3(10.0, 5.0, time);
+	vec3 rd = normalize(camera(ro, ro + vec3(-15.0, -3.0, 3))*vec3(uv, 1.97));
 
 	float i = march(ro, rd);
 	if(i < tmax) {
 		vec3 pos = ro + rd*i;
 		vec3 nor = normal(pos);
+		vec3 ref = reflect(rd, nor);
 
-		vec3 lig = normalize(vec3(0.8, 1.0, 0.5));
+		vec3 lig = normalize(vec3(0.8, 0.7, -0.6));
+		float sha = shadow(pos, lig);
+		float dif = clamp(dot(lig, nor), 0.0, 1.0)*sha;
 
 		col  = 0.2*vec3(1);
-		col += 0.7*clamp(dot(lig, nor), 0.0, 1.0)*shadow(pos, lig);
+		col += 0.7*dif;
+
+		if(pos.y + 1.0 - 2.0*noise(0.15*pos) > 0.1) {
+			col *= vec3(0.6, 0.5, 0.2);
+		} else {
+			vec3 mat = vec3(0.1, 0.4, 0.1);
+			mat = mix(mat, vec3(2.0), smoothstep(0.0, 1.0, 2.0*smoothstep(0.4, 1.0, fbm(1.0*pos))));
+			col *= mat;
+		}
+
+		col += 0.9*pow(clamp(dot(lig, ref), 0.0, 1.0), 2.0)*dif;
+		col += 0.9*pow(clamp(1.0 + dot(rd, nor), 0.0, 1.0), 2.0)*sha;
 	}
 
 	fragColor = vec4(col, 1);

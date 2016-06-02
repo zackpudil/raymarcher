@@ -83,7 +83,7 @@ int main() {
     Shader sceneShader;
     sceneShader
       .attach("vert.vert")
-      .attach("scenes/tree.frag")
+      .attach("scenes/frozen_trees.frag")
       .link();
 
     Shader imageShader;
