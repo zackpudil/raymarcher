@@ -129,9 +129,9 @@ float map(vec3 p) {
 float march(vec3 ro, vec3 rd) {
 	float t = 0.0;
 
-	for(int i = 0; i < 400; i++) {
+	for(int i = 0; i < 250; i++) {
 		float d = map(ro + rd*t);
-		if(abs(d) < 0.0001 || t >= tmax) break;
+		if(abs(d) < 0.01 || t >= tmax) break;
 		t += d*0.25;
 	}
 
@@ -171,7 +171,7 @@ float shadow(vec3 p, vec3 l) {
 	float res = 1.0;
 	float t = 0.01;
 
-	for(int i = 0; i < 300; i++) {
+	for(int i = 0; i < 100; i++) {
 		float d = map(p + l*t);
 		t += d*0.30;
 		res = min(res, 32.0*d/t);
@@ -205,7 +205,7 @@ void main() {
 		vec3 ref = reflect(rd, nor);
 
 		vec3 lig = normalize(vec3(0.8, 0.7, -0.6));
-		float sha = shadow(pos, lig);
+		float sha = shadow(pos, lig) + step(-0.9, pos.y - 2.0*noise(0.15*pos));
 		float dif = clamp(dot(lig, nor), 0.0, 1.0)*sha;
 
 		col  = 0.2*vec3(1);
@@ -219,8 +219,7 @@ void main() {
 			col *= mat;
 		}
 
-		col += 0.9*pow(clamp(dot(lig, ref), 0.0, 1.0), 2.0)*dif;
-		col += 0.9*pow(clamp(1.0 + dot(rd, nor), 0.0, 1.0), 2.0)*sha;
+		col += 2.0*pow(clamp(1.0 + dot(rd, nor), 0.0, 1.0), 2.0)*sha;
 	}
 
 	fragColor = vec4(col, 1);
