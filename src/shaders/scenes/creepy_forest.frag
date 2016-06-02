@@ -101,7 +101,7 @@ float map(vec3 p) {
 float march(vec3 ro, vec3 rd) {
   float t = 0.0;
   
-  for(int i = 0; i < 200; i++) {
+  for(int i = 0; i < 150; i++) {
     float h = map(ro + rd*t);
     if(abs(h) < 0.001 || t >= 10.0) break;
     t += h*0.25;
