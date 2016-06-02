@@ -10,6 +10,7 @@
 #include <cstdlib>
 
 #include <shader.hpp>
+#include <scene.hpp>
 
 int main() {
     // Load GLFW and Create a Window
@@ -80,11 +81,19 @@ int main() {
       glBindVertexArray(0);
     glBindVertexArray(0);
 
-    Shader sceneShader;
-    sceneShader
-      .attach("vert.vert")
-      .attach("scenes/frozen_trees.frag")
-      .link();
+
+    std::vector<Scene> scenes;
+    uint activeScene = 3;
+    bool enterHit = false;
+
+    scenes.push_back(Scene("creepy_forest"));
+    scenes.push_back(Scene("earf_day"));
+    scenes.push_back(Scene("flooded_canyon"));
+    scenes.push_back(Scene("frozen_trees"));
+    scenes.push_back(Scene("grimy_teeth"));
+    scenes.push_back(Scene("muddy_caveran"));
+    scenes.push_back(Scene("spongebob"));
+    scenes.push_back(Scene("velocibox"));
 
     Shader imageShader;
     imageShader
@@ -102,6 +111,15 @@ int main() {
         if(glfwGetKey(mWindow, GLFW_KEY_SPACE) == GLFW_PRESS)
             glfwSetTime(0);
 
+        int key = glfwGetKey(mWindow, GLFW_KEY_ENTER);
+        if(key == GLFW_PRESS) {
+          enterHit = true;
+        } else if(key == GLFW_RELEASE && enterHit) {
+          activeScene++;
+          if(activeScene >= scenes.size()) activeScene = 0;
+          enterHit = false;
+        }
+
         glBindVertexArray(vao);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
 
@@ -109,10 +127,7 @@ int main() {
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        sceneShader
-          .activate()
-          .bind("resolution", res)
-          .bind("time", (float)glfwGetTime());
+        scenes[activeScene].prepareDraw(res, (float)glfwGetTime());
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
