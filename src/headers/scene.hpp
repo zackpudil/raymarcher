@@ -6,6 +6,7 @@ class Scene {
 public:
 	Scene(const std::string &sceneName);
 
+	void prepareDraw(glm::vec2 resolution);
 	void prepareDraw(glm::vec2 resolution, float time);
 
 private:
