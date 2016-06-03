@@ -83,7 +83,7 @@ int main() {
 
 
     std::vector<Scene> scenes;
-    uint activeScene = 3;
+    uint activeScene = 0;
     bool enterHit = false;
 
     scenes.push_back(Scene("creepy_forest"));

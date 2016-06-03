@@ -69,7 +69,7 @@ vec4 volumetric(vec3 ro, vec3 rd, float md, vec2 p) {
   
   t += 0.1*hash2(p);
   
-  for(int i = 0; i < 100; i++) {
+  for(int i = 0; i < 75; i++) {
     if(sum.a > 0.99) continue;
     if(t > md) break;
     float d = volume(ro + rd*t);
@@ -101,10 +101,10 @@ float map(vec3 p) {
 float march(vec3 ro, vec3 rd) {
   float t = 0.0;
   
-  for(int i = 0; i < 150; i++) {
+  for(int i = 0; i < 100; i++) {
     float h = map(ro + rd*t);
     if(abs(h) < 0.001 || t >= 10.0) break;
-    t += h*0.25;
+    t += h*0.5;
   }
   
   return t;
