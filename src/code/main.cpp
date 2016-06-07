@@ -83,7 +83,7 @@ int main() {
 
 
     std::vector<Scene> scenes;
-    uint activeScene = 0;
+    uint activeScene = 8;
     bool enterHit = false;
 
     scenes.push_back(Scene("ancient_generators", true));
@@ -94,6 +94,7 @@ int main() {
     scenes.push_back(Scene("gold_fractal", true));
     scenes.push_back(Scene("grimy_teeth", true));
     scenes.push_back(Scene("muddy_caveran", true));
+    scenes.push_back(Scene("space_monolith", true));
     scenes.push_back(Scene("spongebob", true));
     scenes.push_back(Scene("velocibox", true));
 
