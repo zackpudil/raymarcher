@@ -86,14 +86,16 @@ int main() {
     uint activeScene = 0;
     bool enterHit = false;
 
-    scenes.push_back(Scene("creepy_forest"));
-    scenes.push_back(Scene("earf_day"));
-    scenes.push_back(Scene("flooded_canyon"));
-    scenes.push_back(Scene("frozen_trees"));
-    scenes.push_back(Scene("grimy_teeth"));
-    scenes.push_back(Scene("muddy_caveran"));
-    scenes.push_back(Scene("spongebob"));
-    scenes.push_back(Scene("velocibox"));
+    scenes.push_back(Scene("ancient_generators", true));
+    scenes.push_back(Scene("creepy_forest", true));
+    scenes.push_back(Scene("earf_day", true));
+    scenes.push_back(Scene("flooded_canyon", true));
+    scenes.push_back(Scene("frozen_trees", true));
+    scenes.push_back(Scene("gold_fractal", true));
+    scenes.push_back(Scene("grimy_teeth", true));
+    scenes.push_back(Scene("muddy_caveran", true));
+    scenes.push_back(Scene("spongebob", true));
+    scenes.push_back(Scene("velocibox", true));
 
     Shader imageShader;
     imageShader
@@ -135,11 +137,7 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT);
 
         glViewport(0, 0, mWidth*2, mHeight*2);
-
-        glBindTexture(GL_TEXTURE_2D, texture);
-        imageShader
-          .activate()
-          .bind("image", (int)texture - 1);
+        imageShader.activate();
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         glBindVertexArray(0);
