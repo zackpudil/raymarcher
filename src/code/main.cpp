@@ -83,7 +83,7 @@ int main() {
 
 
     std::vector<Scene> scenes;
-    uint activeScene = 8;
+    uint activeScene = 0;
     bool enterHit = false;
 
     scenes.push_back(Scene("ancient_generators", true));
