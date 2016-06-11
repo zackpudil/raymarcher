@@ -86,17 +86,18 @@ int main() {
     uint activeScene = 0;
     bool enterHit = false;
 
-    scenes.push_back(Scene("ancient_generators", true));
-    scenes.push_back(Scene("creepy_forest", true));
-    scenes.push_back(Scene("earf_day", true));
-    scenes.push_back(Scene("flooded_canyon", true));
-    scenes.push_back(Scene("frozen_trees", true));
-    scenes.push_back(Scene("gold_fractal", true));
-    scenes.push_back(Scene("grimy_teeth", true));
-    scenes.push_back(Scene("muddy_caveran", true));
-    scenes.push_back(Scene("space_monolith", true));
-    scenes.push_back(Scene("spongebob", true));
-    scenes.push_back(Scene("velocibox", true));
+    scenes.push_back(Scene("ancient_generators", true)); // 0
+    scenes.push_back(Scene("creepy_forest", true)); // 1
+    scenes.push_back(Scene("earf_day", true)); // 2 
+    scenes.push_back(Scene("flooded_canyon", true)); // 3
+    scenes.push_back(Scene("frozen_trees", true)); // 4
+    scenes.push_back(Scene("gold_fractal", true)); // 5
+    scenes.push_back(Scene("grimy_teeth", true)); // 6
+    scenes.push_back(Scene("muddy_caveran", true)); // 7
+    scenes.push_back(Scene("server_room", true)); // 8
+    scenes.push_back(Scene("space_monolith", true)); // 9
+    scenes.push_back(Scene("spongebob", true)); // 10
+    scenes.push_back(Scene("velocibox", true)); // 11
 
     Shader imageShader;
     imageShader
