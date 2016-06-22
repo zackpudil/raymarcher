@@ -18,6 +18,10 @@ void Shader::bind(GLuint loc, glm::mat4 value) {
     glUniformMatrix4fv(loc, 1, GL_FALSE, glm::value_ptr(value));
 }
 
+void Shader::bind(GLuint loc, glm::mat3 value) {
+    glUniformMatrix3fv(loc, 1, GL_FALSE, glm::value_ptr(value));
+}
+
 void Shader::bind(GLuint loc, glm::vec4 value) {
     glUniform4fv(loc, 1, glm::value_ptr(value));
 }

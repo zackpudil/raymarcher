@@ -11,6 +11,7 @@
 
 #include <shader.hpp>
 #include <scene.hpp>
+#include <camera.hpp>
 
 int main() {
     // Load GLFW and Create a Window
@@ -30,6 +31,7 @@ int main() {
 
     // Create Context and Load OpenGL Functions
     glfwMakeContextCurrent(mWindow);
+    glfwSetInputMode(mWindow, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     gladLoadGL();
     fprintf(stderr, "OpenGL %s\n", glGetString(GL_VERSION));
 
@@ -83,21 +85,22 @@ int main() {
 
 
     std::vector<Scene> scenes;
-    uint activeScene = 0;
+    uint activeScene = 7;
     bool enterHit = false;
 
-    scenes.push_back(Scene("ancient_generators", true)); // 0
-    scenes.push_back(Scene("creepy_forest", true)); // 1
-    scenes.push_back(Scene("earf_day", true)); // 2 
-    scenes.push_back(Scene("flooded_canyon", true)); // 3
-    scenes.push_back(Scene("frozen_trees", true)); // 4
-    scenes.push_back(Scene("gold_fractal", true)); // 5
-    scenes.push_back(Scene("grimy_teeth", true)); // 6
-    scenes.push_back(Scene("muddy_caveran", true)); // 7
-    scenes.push_back(Scene("server_room", true)); // 8
-    scenes.push_back(Scene("space_monolith", true)); // 9
-    scenes.push_back(Scene("spongebob", true)); // 10
-    scenes.push_back(Scene("velocibox", true)); // 11
+    scenes.push_back(Scene("ancient_generators", true, false)); // 0
+    scenes.push_back(Scene("creepy_forest", true, false)); // 1
+    scenes.push_back(Scene("earf_day", true, false)); // 2 
+    scenes.push_back(Scene("flooded_canyon", true, false)); // 3
+    scenes.push_back(Scene("frozen_trees", true, false)); // 4
+    scenes.push_back(Scene("gold_fractal", true, false)); // 5
+    scenes.push_back(Scene("grimy_teeth", true, false)); // 6
+    scenes.push_back(Scene("mandelbox", false, true)); // 7
+    scenes.push_back(Scene("muddy_caveran", true, false)); // 8
+    scenes.push_back(Scene("server_room", true, false)); // 9
+    scenes.push_back(Scene("space_monolith", true, false)); // 10 
+    scenes.push_back(Scene("spongebob", true, false)); // 11
+    scenes.push_back(Scene("velocibox", true, false)); // 12
 
     Shader imageShader;
     imageShader
@@ -107,13 +110,17 @@ int main() {
 
     glm::vec2 res(mWidth/2, mHeight/2);
 
+    Camera camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, -1), mWindow, 1.0, 0.5);
+
     // Rendering Loop
     while (glfwWindowShouldClose(mWindow) == false) {
         if (glfwGetKey(mWindow, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(mWindow, true);
 
-        if(glfwGetKey(mWindow, GLFW_KEY_SPACE) == GLFW_PRESS)
+        if(glfwGetKey(mWindow, GLFW_KEY_P) == GLFW_PRESS)
             glfwSetTime(0);
+
+        camera.handleInput();
 
         int key = glfwGetKey(mWindow, GLFW_KEY_ENTER);
         if(key == GLFW_PRESS) {
@@ -131,7 +138,11 @@ int main() {
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        scenes[activeScene].prepareDraw(res, (float)glfwGetTime());
+        scenes[activeScene].prepareDraw(res, 
+            (float)glfwGetTime(), 
+            camera.getViewMatrix(), 
+            camera.position,
+            camera.fov);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         glBindFramebuffer(GL_FRAMEBUFFER, 0);

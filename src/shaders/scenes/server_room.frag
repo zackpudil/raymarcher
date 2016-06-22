@@ -62,7 +62,7 @@ float map(vec3 p) {
 
 	for(int i = 0; i < 10; i++) {
 		q.xyz = -1.0 + 2.0*fract(0.5 + 0.5*q.xyz);
-		q = 1.3*q/max(dot(q.xyz, q.xyz), 0.3);
+		q = 1.3*q/max(dot(q.xyz, q.xyz), 0.1);
 	}
 
 	vec2 tun = abs(p.xy - path(p.z))*vec2(0.6, 0.5);
@@ -135,7 +135,7 @@ void main() {
 
 	vec3 col = vec3(0);
 
-	vec3 ro = vec3(0.6*cos(time), 1, time);
+	vec3 ro = vec3(0.63*cos(time), 0.67, time);
 	vec3 la = ro + vec3(0, 0, 0.3);
 
 	ro.xy += path(ro.z);
@@ -152,7 +152,7 @@ void main() {
 		vec3 key = normalize(pos - rig);
 
 		col  = 0.1*vec3(0, 1, 1);
-		col += 0.7*clamp(dot(key, nor), 0.0, 1.0)*vec3(1.0/max(1.0, i), 1, 1);
+		col += 0.9*clamp(dot(key, nor), 0.0, 1.0)*vec3(1.0/max(1.0, i), 1, 1);
 		col += 0.4*clamp(dot(-key, nor), 0.0, 1.0)*vec3(1.0/max(1.0, i), 1, 1);
 
 		col *= material(pos);

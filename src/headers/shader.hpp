@@ -19,6 +19,7 @@ public:
     Shader& activate();
 
     void bind(GLuint, glm::mat4);
+    void bind(GLuint, glm::mat3);
     void bind(GLuint, glm::vec4);
     void bind(GLuint, glm::vec3);
     void bind(GLuint, glm::vec2);
