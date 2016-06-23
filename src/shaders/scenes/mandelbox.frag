@@ -22,8 +22,9 @@ float md = 0.6;
 float fl = 1.0;
 
 float map(vec3 p) {
-	p.z += 3.0;
-	p.x = mod(p.x + 1.0, 2.0) - 1.0;
+	p.x -= 2.0;
+	p.y += 0.8;
+	p.z = mod(p.z + 1.0, 2.0) - 1.0;
 
 	vec4 q = vec4(p, 1.0);
 	vec4 o = q;
@@ -31,7 +32,7 @@ float map(vec3 p) {
 	orb = vec4(1000.0);
 
 	for(int i = 0; i < 11; i++) {
-		rotate(q.zy, 1.00);
+		rotate(q.xy, 1.00);
 		q.xyz = clamp(q.xyz, -fl, fl)*2.0 - q.xyz;
 		float r = dot(q.xyz, q.xyz);
 		q *= clamp(max(md/r, md), 0.0, 1.0);
@@ -40,7 +41,7 @@ float map(vec3 p) {
 		orb = min(orb, vec4(abs(q.xyz), r));
 	}
 
-	return (length(q.xyz) - 2.0)/q.w - pow(3.0, -10.0);
+	return (length(q.xyz) - 2.0)/q.w - pow(3.0, -10.0) - 0.01;
 }
 
 vec2 march(vec3 ro, vec3 rd) {
@@ -52,10 +53,10 @@ vec2 march(vec3 ro, vec3 rd) {
 		if(d < 0.00007*(1.0 + 80.0*t) || t >= tmax) break;
 		t += d*(0.25 + 0.1*t);
 
-		g += clamp(0.2 - d, 0.0, 0.4);
+		g += 0.01;
 	}
 
-	return vec2(t, clamp(g, 0.0, 1.0));
+	return vec2(t, t >= tmax ? 0.0 : clamp(g, 0.0, 1.0));
 }
 
 vec3 normal(vec3 p) {
@@ -102,9 +103,9 @@ void main() {
 		vec3 gro = vec3(0, 1, 0);
 
 		col  = 0.1*vec3(1);
-		col += 0.7*clamp(dot(key, nor), 0.0, 1.0);
-		col += 0.4*clamp(0.2 + 0.8*dot(-key, nor), 0.0, 1.0);
-		col += 0.3*clamp(dot(gro, nor), 0.0, 1.0);
+		col += 0.9*clamp(dot(key, nor), 0.0, 1.0);
+		col += 0.6*clamp(0.2 + 0.8*dot(-key, nor), 0.0, 1.0);
+		col += 0.5*clamp(dot(gro, nor), 0.0, 1.0);
 
 		mat = mix(vec3(1), vec3(0.3, 0.2, 0.2), clamp(2.0*(orb.x + orb.z), 0.0, 1.0));
 		mat = mix(mat, vec3(0.5, 0.2, 0.3), clamp(0.5*orb.y, 0.0, 1.0));
@@ -119,7 +120,7 @@ void main() {
 		col *= ao(pos, nor);
 	}
 
-	col += vec3(pow(abs(i.y), 4.0))*mat;
+	col += vec3(pow(abs(i.y), 5.0))*vec3(1.00, 0.97, 0.3)*0.5;
 	col = mix(col, vec3(1), 1.0 - exp(-0.1*i.x));
 	col = sqrt(col);
 
