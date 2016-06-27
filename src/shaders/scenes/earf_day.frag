@@ -77,19 +77,21 @@ vec2 map(vec3 p) {
 	return d1.x < d2.x ? d1 : d2;
 }
 
-vec2 intersect(vec3 ro, vec3 rd) {
+vec3 intersect(vec3 ro, vec3 rd) {
 	float td = 0.0;
 	float mid = -1.0;
+	float g = 0.0;
 	
 	for(int i = 0; i < 100; i++) {
 		vec2 s = map(ro + rd*td);
 		if(abs(s.x) < 0.001 || td >= TMAX) break;
 		td += s.x*0.95;
 		mid = s.y;
+        if(s.y <= 0.0) g += clamp(0.07 - s.x, 0.0, 1.0);
 	}
 	
 	if(td >= TMAX) mid = -1.0;
-	return vec2(td, mid);
+	return vec3(td, mid, g);
 }
 
 vec3 normal(vec3 p) {
@@ -147,7 +149,7 @@ void main() {
 	
 	vec3 col = vec3(1.0)*step(0.997, hash2(uv));
 	
-	vec2 i = intersect(ro, rd);
+	vec3 i = intersect(ro, rd);
 	
 	if(i.y > -0.5) {
 		col = vec3(0);
@@ -173,6 +175,7 @@ void main() {
 		}
 	}
 	
+    col += pow(abs(i.z), 4.0)*vec3(0.0, 0.3, 1.0);
 	col = pow(col, vec3(0.454545));
 	
 	fragColor = vec4(col, 1);

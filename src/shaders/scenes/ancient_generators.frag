@@ -99,18 +99,21 @@ float map(vec3 p) {
 	return min(length(q.xyz)/q.w - 0.1, min(op.y + 0.5, -op.y + 5.5));
 }
 
-float march(vec3 ro, vec3 rd) {
+vec2 march(vec3 ro, vec3 rd) {
 	float d = 1.0;
 	float e, t = 0.0;
+	float g = 0.0;
 
 	for(int i = 0; i < 100; i++) {
 		if(d < e || t >= tmax) break;
 		d = map(ro + rd*t);
 		e = 0.00005*(1.0 + t*1.0);
 		t += d*0.5;
+
+		g += 1.0;
 	}
 
-	return t;
+	return vec2(t, clamp(g*0.01, 0.0, 1.0));
 }
 
 vec3 normal(vec3 p) {
@@ -161,10 +164,10 @@ void main() {
 	vec3 ro = vec3(cos(1.57*time), 2.1 + 2.0*sin(time*0.5), time);
 	vec3 rd = normalize(camera(ro, ro + vec3(cos(1.57*time + 2.0), 2.0*sin(time*0.5 + 2.0), 3))*vec3(uv, 1.97));
 
-	float i = march(ro, rd);
+	vec2 i = march(ro, rd);
 
-	if(i < tmax) {
-		vec3 pos = ro + rd*i;
+	if(i.x < tmax) {
+		vec3 pos = ro + rd*i.x;
 		vec3 nor = normal(pos);
 
 		vec3 lig = normalize(vec3(0.8, 0.7, -0.6));
@@ -175,8 +178,9 @@ void main() {
 		col += 0.3*pow(clamp(1.0 + dot(rd, nor), 0.0, 1.0), 2.0);
 	}
 
-	vec4 vol = volumetric(ro, rd, uv, i);
-	col = mix(col, vec3(0.0), 1.0 - exp(-0.5*i));
+	vec4 vol = volumetric(ro, rd, uv, i.x);
+	col += pow(abs(i.y), 2.0)*vec3(1.00, 0.97, 0.54);
+	col = mix(col, vec3(0.0), 1.0 - exp(-0.5*i.x));
 	col = mix(col, 2.0*vol.rgb, vol.a);
 	col = pow(col, vec3(.454545));
 
