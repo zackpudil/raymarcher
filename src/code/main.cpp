@@ -85,7 +85,7 @@ int main() {
 
 
     std::vector<Scene> scenes;
-    uint activeScene = 0;
+    uint activeScene = 9;
     bool enterHit = false;
 
     scenes.push_back(Scene("ancient_generators", true, false)); // 0
@@ -97,11 +97,12 @@ int main() {
     scenes.push_back(Scene("grimy_teeth", true, false)); // 6
     scenes.push_back(Scene("kaliset", true, false)); // 7
     scenes.push_back(Scene("mandelbox", false, true)); // 8
-    scenes.push_back(Scene("muddy_caveran", true, false)); // 9
-    scenes.push_back(Scene("server_room", true, false)); // 10 
-    scenes.push_back(Scene("space_monolith", true, false)); // 11 
-    scenes.push_back(Scene("spongebob", true, false)); // 12
-    scenes.push_back(Scene("velocibox", true, false)); // 13
+    scenes.push_back(Scene("mandalay", true, true)); // 9
+    scenes.push_back(Scene("muddy_caveran", true, false)); // 10
+    scenes.push_back(Scene("server_room", true, false)); // 11 
+    scenes.push_back(Scene("space_monolith", true, false)); // 12 
+    scenes.push_back(Scene("spongebob", true, false)); // 13
+    scenes.push_back(Scene("velocibox", true, false)); // 14
 
     Shader imageShader;
     imageShader
@@ -111,7 +112,7 @@ int main() {
 
     glm::vec2 res(mWidth/2, mHeight/2);
 
-    Camera camera(glm::vec3(0, 0, -3), glm::vec3(0, 0, -1), mWindow, 1.0, 0.5);
+    Camera camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, -1), mWindow, 1.0, 0.5);
 
     // Rendering Loop
     while (glfwWindowShouldClose(mWindow) == false) {
