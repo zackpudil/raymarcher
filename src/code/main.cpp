@@ -13,6 +13,10 @@
 #include <scene.hpp>
 #include <camera.hpp>
 
+std::string getString(glm::vec3 v) {
+    return "vec3(" + std::to_string(v.x) + ", " + std::to_string(v.y) + ", " + std::to_string(v.z) + ")";
+}
+
 int main() {
     // Load GLFW and Create a Window
     glfwInit();
@@ -112,10 +116,17 @@ int main() {
 
     glm::vec2 res(mWidth/2, mHeight/2);
 
-    Camera camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, -1), mWindow, 1.0, 0.5);
+    Camera camera(glm::vec3(-6.258072,6.103697,-5.673536), glm::vec3(0, 0, -1), mWindow, 0.6, 0.5);
+    glm::vec3 lastCameraPosition = camera.position;
+    glm::vec3 lastCameraDirection = camera.direction;
+    float lastTime = 0;
+    float time = 0;
+    fprintf(stderr, "void cameraPath(inout vec3 p, inout vec3 d, float t) {\n");
 
     // Rendering Loop
     while (glfwWindowShouldClose(mWindow) == false) {
+
+
         if (glfwGetKey(mWindow, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(mWindow, true);
 
@@ -161,6 +172,23 @@ int main() {
         // Flip Buffers and Draw
         glfwSwapBuffers(mWindow);
         glfwPollEvents();
+
+        time = glfwGetTime();
+        if(time - lastTime >= 2) {
+
+            std::string e = lastTime == 0 ? "" : "} else ";
+            fprintf(stderr, "\t%s\n", ( e + "if(t >= " + std::to_string(lastTime) + " && t < " + std::to_string(time) + ") {").c_str());
+            fprintf(stderr, "\t\t%s\n", ("p = mix(" + getString(camera.position) + "," + getString(lastCameraPosition) + ", abs(" + std::to_string(time) + " - t)/2.0);").c_str());
+            fprintf(stderr, "\t\t%s\n", ("d = mix(" + getString(camera.direction) + "," + getString(lastCameraDirection) + ", abs(" + std::to_string(time) + " - t)/2.0);").c_str());
+
+            lastCameraPosition = camera.position;
+            lastCameraDirection = camera.direction;
+            lastTime = time;
+        }
+
     }   glfwTerminate();
+
+    fprintf(stderr, "\t}\n");
+    fprintf(stderr, "}\n");
     return EXIT_SUCCESS;
 }

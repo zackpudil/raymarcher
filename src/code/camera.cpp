@@ -1,4 +1,6 @@
 #include <camera.hpp>
+#include <cstdio>
+
 Camera* Camera::instance = nullptr;
 
 Camera::Camera(glm::vec3 p, glm::vec3 d, GLFWwindow *w, float s, float sens) :
@@ -39,10 +41,11 @@ void Camera::_handleMouse() {
         CAMERA_LAST_Y = ypos;
         firstMove = false;
     }
-    
+
     _calculateDirection(xpos - CAMERA_LAST_X, CAMERA_LAST_Y - ypos);
     CAMERA_LAST_X = xpos;
     CAMERA_LAST_Y = ypos;
+
 }
 
 void Camera::_handleKeyboard(GLfloat deltaTime) {
