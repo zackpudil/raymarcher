@@ -54,7 +54,7 @@ float de(vec3 p) {
 		d = min(d, (length(q.xz))/q.w);
 	}
 
-	return d - 0.01;
+	return d - 0.02;
 }
 
 // code generated in console.
@@ -377,10 +377,10 @@ void main() {
 	vec3 rd = normalize(p.x*uu + p.y*vv + 1.97*ww);
 
 	float t = 0.0;
-	for(int i = 0; i < 300; i++) {
+	for(int i = 0; i < 250; i++) {
 		float d = de(ro + rd*t);
-		if(abs(d) < 0.001*t || t >= tmax) break;
-		t += d*0.5;
+		if(d < 0.001*t || t >= tmax) break;
+		t += d*0.75;
 	}
 
 	vec3 col = vec3(0);
