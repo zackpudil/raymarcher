@@ -89,7 +89,7 @@ int main() {
 
 
     std::vector<Scene> scenes;
-    uint activeScene = 9;
+    uint activeScene = 11;
     bool enterHit = false;
 
     scenes.push_back(Scene("ancient_generators", true, false)); // 0
@@ -100,8 +100,8 @@ int main() {
     scenes.push_back(Scene("gold_fractal", true, false)); // 5
     scenes.push_back(Scene("grimy_teeth", true, false)); // 6
     scenes.push_back(Scene("kaliset", true, false)); // 7
-    scenes.push_back(Scene("mandelbox", false, true)); // 8
-    scenes.push_back(Scene("mandalay", true, true)); // 9
+    scenes.push_back(Scene("mandelbox", true, false)); // 8
+    scenes.push_back(Scene("mandalay", true, false)); // 9
     scenes.push_back(Scene("muddy_caveran", true, false)); // 10
     scenes.push_back(Scene("server_room", true, false)); // 11 
     scenes.push_back(Scene("space_monolith", true, false)); // 12 
@@ -116,7 +116,7 @@ int main() {
 
     glm::vec2 res(mWidth/2, mHeight/2);
 
-    Camera camera(glm::vec3(-6.258072,6.103697,-5.673536), glm::vec3(0, 0, -1), mWindow, 0.6, 0.5);
+    Camera camera(glm::vec3(0, 0, -3), glm::vec3(0, 0, -1), mWindow, 0.6, 0.5);
     glm::vec3 lastCameraPosition = camera.position;
     glm::vec3 lastCameraDirection = camera.direction;
     float lastTime = 0;
@@ -174,12 +174,13 @@ int main() {
         glfwPollEvents();
 
         time = glfwGetTime();
-        if(time - lastTime >= 2) {
+
+        if(time - lastTime >= 1.0) {
 
             std::string e = lastTime == 0 ? "" : "} else ";
             fprintf(stderr, "\t%s\n", ( e + "if(t >= " + std::to_string(lastTime) + " && t < " + std::to_string(time) + ") {").c_str());
-            fprintf(stderr, "\t\t%s\n", ("p = mix(" + getString(camera.position) + "," + getString(lastCameraPosition) + ", abs(" + std::to_string(time) + " - t)/2.0);").c_str());
-            fprintf(stderr, "\t\t%s\n", ("d = mix(" + getString(camera.direction) + "," + getString(lastCameraDirection) + ", abs(" + std::to_string(time) + " - t)/2.0);").c_str());
+            fprintf(stderr, "\t\t%s\n", ("p = mix(" + getString(camera.position) + "," + getString(lastCameraPosition) + ", abs(" + std::to_string(time) + " - t)/" + std::to_string(time - lastTime) +");").c_str());
+            fprintf(stderr, "\t\t%s\n", ("d = mix(" + getString(camera.direction) + "," + getString(lastCameraDirection) + ", abs(" + std::to_string(time) + " - t)/"  + std::to_string(time - lastTime) +");").c_str());
 
             lastCameraPosition = camera.position;
             lastCameraDirection = camera.direction;

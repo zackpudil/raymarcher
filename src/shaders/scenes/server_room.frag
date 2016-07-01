@@ -92,6 +92,21 @@ vec3 normal(vec3 p) {
 	return normalize(n);
 }
 
+float ao(vec3 p, vec3 n) {
+	float o = 0.0, s = 0.01, w = 1.0;
+
+	for(int i = 0; i < 15; i++) {
+		float d = map(p + n*s);
+
+		o += (s - d)*w;
+		w *= 0.95;
+
+		s += s/(float(i) + 1.0);
+	}
+
+	return 1.0 - clamp(o, 0.0, 1.0);
+}
+
 vec3 material(vec3 p) {
 	float v = 0.0;
 	float a = 0.7, f = 1.0;
@@ -156,6 +171,8 @@ void main() {
 		col += 0.4*clamp(dot(-key, nor), 0.0, 1.0)*vec3(1.0/max(1.0, i), 1, 1);
 
 		col *= material(pos);
+
+		col *= ao(pos, nor);
 	}
 
 	col = mix(col, vec3(0), 1.0 - exp(-0.5*i));
