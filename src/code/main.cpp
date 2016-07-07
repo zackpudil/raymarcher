@@ -96,17 +96,19 @@ int main() {
     scenes.push_back(Scene("creepy_forest", true, false)); // 1
     scenes.push_back(Scene("earf_day", true, false)); // 2 
     scenes.push_back(Scene("flooded_canyon", true, false)); // 3
-    scenes.push_back(Scene("frozen_trees", true, false)); // 4
-    scenes.push_back(Scene("gold_fractal", true, false)); // 5
-    scenes.push_back(Scene("grimy_teeth", true, false)); // 6
-    scenes.push_back(Scene("kaliset", true, false)); // 7
-    scenes.push_back(Scene("mandelbox", true, false)); // 8
-    scenes.push_back(Scene("mandalay", true, false)); // 9
-    scenes.push_back(Scene("muddy_caveran", true, false)); // 10
-    scenes.push_back(Scene("server_room", true, false)); // 11 
-    scenes.push_back(Scene("space_monolith", true, false)); // 12 
-    scenes.push_back(Scene("spongebob", true, false)); // 13
-    scenes.push_back(Scene("velocibox", true, false)); // 14
+    scenes.push_back(Scene("flower_hive", true, true)); // 4
+    scenes.push_back(Scene("frozen_trees", true, false)); // 5
+    scenes.push_back(Scene("gold_fractal", true, false)); // 6
+    scenes.push_back(Scene("grimy_teeth", true, false)); // 7
+    scenes.push_back(Scene("kalieda", true, true)); // 8
+    scenes.push_back(Scene("kaliset", true, false)); // 9
+    scenes.push_back(Scene("mandelbox", true, false)); // 10 
+    scenes.push_back(Scene("mandalay", true, false)); // 11 
+    scenes.push_back(Scene("muddy_caveran", true, false)); // 12
+    scenes.push_back(Scene("server_room", true, false)); // 13
+    scenes.push_back(Scene("space_monolith", true, false)); // 14 
+    scenes.push_back(Scene("spongebob", true, false)); // 15
+    scenes.push_back(Scene("velocibox", true, false)); // 16
 
     Shader imageShader;
     imageShader
@@ -116,12 +118,16 @@ int main() {
 
     glm::vec2 res(mWidth/2, mHeight/2);
 
-    Camera camera(glm::vec3(0, 0, -3), glm::vec3(0, 0, -1), mWindow, 0.6, 0.5);
+    Camera camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, 1), mWindow, 0.6, 0.5);
+
     glm::vec3 lastCameraPosition = camera.position;
     glm::vec3 lastCameraDirection = camera.direction;
+
     float lastTime = 0;
     float time = 0;
-    fprintf(stderr, "void cameraPath(inout vec3 p, inout vec3 d, float t) {\n");
+    std::vector<std::string> cameraPath;
+
+    cameraPath.push_back("void cameraPath(inout vec3 p, inout vec3 d, float t) {");
 
     // Rendering Loop
     while (glfwWindowShouldClose(mWindow) == false) {
@@ -178,9 +184,9 @@ int main() {
         if(time - lastTime >= 1.0) {
 
             std::string e = lastTime == 0 ? "" : "} else ";
-            fprintf(stderr, "\t%s\n", ( e + "if(t >= " + std::to_string(lastTime) + " && t < " + std::to_string(time) + ") {").c_str());
-            fprintf(stderr, "\t\t%s\n", ("p = mix(" + getString(camera.position) + "," + getString(lastCameraPosition) + ", abs(" + std::to_string(time) + " - t)/" + std::to_string(time - lastTime) +");").c_str());
-            fprintf(stderr, "\t\t%s\n", ("d = mix(" + getString(camera.direction) + "," + getString(lastCameraDirection) + ", abs(" + std::to_string(time) + " - t)/"  + std::to_string(time - lastTime) +");").c_str());
+            cameraPath.push_back("\t" + e + "if(t >= " + std::to_string(lastTime) + " && t < " + std::to_string(time) + ") {");
+            cameraPath.push_back("\t\tp = mix(" + getString(camera.position) + "," + getString(lastCameraPosition) + ", abs(" + std::to_string(time) + " - t)/" + std::to_string(time - lastTime) +");");
+            cameraPath.push_back("\t\td = mix(" + getString(camera.direction) + "," + getString(lastCameraDirection) + ", abs(" + std::to_string(time) + " - t)/"  + std::to_string(time - lastTime) +");");
 
             lastCameraPosition = camera.position;
             lastCameraDirection = camera.direction;
@@ -189,7 +195,13 @@ int main() {
 
     }   glfwTerminate();
 
-    fprintf(stderr, "\t}\n");
-    fprintf(stderr, "}\n");
+    cameraPath.insert(cameraPath.begin() + 1, "\tt = mod(t, " + std::to_string(time) + ");");
+    cameraPath.push_back("\t}");
+    cameraPath.push_back("}");
+
+    for(const auto& codeLine : cameraPath) {
+        fprintf(stderr, "%s\n", codeLine.c_str());
+    }
+
     return EXIT_SUCCESS;
 }
