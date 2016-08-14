@@ -103,12 +103,13 @@ int main() {
     scenes.push_back(Scene("kalieda", true, true)); // 8
     scenes.push_back(Scene("kaliset", true, false)); // 9
     scenes.push_back(Scene("mandelbox", true, false)); // 10 
-    scenes.push_back(Scene("mandalay", true, false)); // 11 
-    scenes.push_back(Scene("muddy_caveran", true, false)); // 12
-    scenes.push_back(Scene("server_room", true, false)); // 13
-    scenes.push_back(Scene("space_monolith", true, false)); // 14 
-    scenes.push_back(Scene("spongebob", true, false)); // 15
-    scenes.push_back(Scene("velocibox", true, false)); // 16
+    scenes.push_back(Scene("mandelball", true, false)); // 11
+    scenes.push_back(Scene("mandalay", true, false)); // 12 
+    scenes.push_back(Scene("muddy_caveran", true, false)); // 13
+    scenes.push_back(Scene("server_room", true, false)); // 14
+    scenes.push_back(Scene("space_monolith", true, false)); // 15 
+    scenes.push_back(Scene("spongebob", true, false)); // 16
+    scenes.push_back(Scene("velocibox", true, false)); // 17
 
     Shader imageShader;
     imageShader
