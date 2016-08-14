@@ -34,3 +34,8 @@ $ cmake -G "Visual Studio <version> <arch> .."
 
 Where <version> is Visual Studio version, and <arch> is Win64, Win32
 Creates a Visual Studio solution file.
+
+## Running
+
+Switch to a new scene using the <Enter> key.
+Some scenes support camera movement with WASD and mouse.
