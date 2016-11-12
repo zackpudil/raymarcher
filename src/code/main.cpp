@@ -16,8 +16,8 @@
 int main() {
     // Load GLFW and Create a Window
     glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
@@ -85,7 +85,7 @@ int main() {
 
 
     std::vector<Scene> scenes;
-    uint activeScene = 0;
+    int activeScene = 0;
     bool enterHit = false;
 
     scenes.push_back(Scene("absbox", true, true));
