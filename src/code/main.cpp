@@ -13,15 +13,11 @@
 #include <scene.hpp>
 #include <camera.hpp>
 
-std::string getString(glm::vec3 v) {
-    return "vec3(" + std::to_string(v.x) + ", " + std::to_string(v.y) + ", " + std::to_string(v.z) + ")";
-}
-
 int main() {
     // Load GLFW and Create a Window
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
@@ -92,6 +88,7 @@ int main() {
     uint activeScene = 0;
     bool enterHit = false;
 
+    scenes.push_back(Scene("absbox", true, true));
     scenes.push_back(Scene("ancient_generators", true, false)); // 0
     scenes.push_back(Scene("creepy_forest", true, false)); // 1
     scenes.push_back(Scene("earf_day", true, false)); // 2 
@@ -119,20 +116,12 @@ int main() {
 
     glm::vec2 res(mWidth/2, mHeight/2);
 
-    Camera camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, 1), mWindow, 0.6, 0.5);
+    Camera camera(glm::vec3(0), glm::vec3(0, 0, 1), mWindow, 2.0, 0.5);
 
-    glm::vec3 lastCameraPosition = camera.position;
-    glm::vec3 lastCameraDirection = camera.direction;
-
-    float lastTime = 0;
     float time = 0;
-    std::vector<std::string> cameraPath;
-
-    cameraPath.push_back("void cameraPath(inout vec3 p, inout vec3 d, float t) {");
 
     // Rendering Loop
     while (glfwWindowShouldClose(mWindow) == false) {
-
 
         if (glfwGetKey(mWindow, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(mWindow, true);
@@ -169,40 +158,18 @@ int main() {
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glViewport(0, 0, mWidth*2, mHeight*2);
         imageShader.activate();
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         glBindVertexArray(0);
-
 
         // Flip Buffers and Draw
         glfwSwapBuffers(mWindow);
         glfwPollEvents();
 
         time = glfwGetTime();
+    }   
 
-        if(time - lastTime >= 1.0) {
-
-            std::string e = lastTime == 0 ? "" : "} else ";
-            cameraPath.push_back("\t" + e + "if(t >= " + std::to_string(lastTime) + " && t < " + std::to_string(time) + ") {");
-            cameraPath.push_back("\t\tp = mix(" + getString(camera.position) + "," + getString(lastCameraPosition) + ", abs(" + std::to_string(time) + " - t)/" + std::to_string(time - lastTime) +");");
-            cameraPath.push_back("\t\td = mix(" + getString(camera.direction) + "," + getString(lastCameraDirection) + ", abs(" + std::to_string(time) + " - t)/"  + std::to_string(time - lastTime) +");");
-
-            lastCameraPosition = camera.position;
-            lastCameraDirection = camera.direction;
-            lastTime = time;
-        }
-
-    }   glfwTerminate();
-
-    cameraPath.insert(cameraPath.begin() + 1, "\tt = mod(t, " + std::to_string(time) + ");");
-    cameraPath.push_back("\t}");
-    cameraPath.push_back("}");
-
-    for(const auto& codeLine : cameraPath) {
-        fprintf(stderr, "%s\n", codeLine.c_str());
-    }
-
+    glfwTerminate();
     return EXIT_SUCCESS;
 }
