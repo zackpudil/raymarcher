@@ -2,190 +2,237 @@
 
 out vec4 fragColor;
 
-uniform float time;
 uniform vec2 resolution;
+uniform float time;
 
 uniform vec3 eye;
 uniform mat3 camera;
 uniform float fov;
 
-vec2 res = resolution;
-vec3 key = vec3(3, 1, -1);
-
-float hack = time;
-
 float hash(float n) {
-	return fract(sin(n)*43758.54543);
+  return fract(sin(n)*43578.5453);
 }
 
-float hash(vec2 n) {
-	return hash(dot(n, vec2(12.232, 93.343)));
+float noise(float g) {
+  float p = floor(g);
+  float f = fract(g);
+
+  f = f*f*(3.0 - 2.0*f);
+
+  return mix(hash(p), hash(p + 1.0), f);
+}
+
+float noise(vec3 g) {
+  vec3 p = floor(g);
+  vec3 f = fract(g);
+
+  f = f*f*(3.0 - 2.0*f);
+  float n = p.x + p.y*57.0 + p.z*113.0;
+
+  float x = mix(hash(n), hash(n + 1.0), f.x);
+  float y = mix(hash(n + 57.0), hash(n + 58.0), f.x);
+  float z = mix(hash(n + 113.0), hash(n + 114.0), f.x);
+  float w = mix(hash(n + 170.0), hash(n + 171.0), f.x);
+
+  return mix(mix(x, y, f.y), mix(z, w, f.y), f.z);
+}
+
+float fbm(vec3 p) {
+  float f = 0.0;
+
+  f += 0.5000*noise(p); p *= 2.02;
+  f += 0.2500*noise(p); p *= 2.04;
+  f += 0.1250*noise(p); p *= 2.03;
+  f += 0.0625*noise(p); p *= 2.01;
+  f /= 0.9375;
+
+  return f;
+}
+
+float fbm(float p) {
+  float f = 0.0;
+
+  f += 0.5000*noise(p); p *= 2.02;
+  f += 0.2500*noise(p); p *= 2.04;
+  f += 0.1250*noise(p); p *= 2.03;
+  f += 0.0625*noise(p); p *= 2.01;
+  f /= 0.9375;
+
+  return f;
 }
 
 void rotate(inout vec2 p, float a) {
-	float s = sin(a);
-	float c = cos(a);
-
-	p = mat2(c, s, -s, c)*p;
+  float s = sin(a);
+  float c = cos(a);
+  
+  p = mat2(c, s, -s, c)*p;
 }
 
-float box(vec3 p, vec3 b) {
-	vec3 d = abs(p) - b;
-	return min(max(d.x, max(d.y, d.z)), 0.0) + length(max(d, 0.0));
+vec2 spiral(vec3 p) {
+  vec3 op = p;
+  p.xz = abs(p.xz) - (2.2);
+  rotate(p.xz, 10.0*(p.y + time));
+  p.xz -= 0.1;
+
+  float f = length(max(abs(p.xz) - 0.1, 0.0));
+
+  return vec2(f, 2.0);
 }
 
-float box(vec2 p, vec2 b) {
-	vec2 d = abs(p) - b;
-	return min(max(d.x, d.y), 0.0) + length(max(d, 0.));
+vec2 water(vec3 p) {
+  return vec2(p.y + 1.0, 1.0);
 }
 
-float mixTime(float t) {
-		float g = mod(t, 4.0);
-		if(g <= 1.0) return fract(t);
-		else if(g > 1.0 && g <= 2.0) return 1.0;
-		else if(g > 2.0 && g <= 3.0) return 1.0 - fract(t);
-		
-		return 0.0;
+vec2 ceiling(vec3 p) {
+  return vec2(-p.y + 4.0, 3.0);
 }
 
-float maze(vec3 p) {
-	vec2 t = floor(p.xz);
-	p.xz = fract(p.xz) - 0.5;
-	p.x *= 2.0*floor(fract(hash(t))*1.8) - 1.0;
+vec2 kali(vec3 p) {
+  vec4 q = vec4(p, 1);
+  q.xyz -= vec3(1.0, 2.0, 1.0);
 
-	float d = abs(1.0 - 2.0*abs(dot(p.xz, vec2(1.0))))/(2.0*sqrt(5.0));
-	d = max(d - 0.4/4.0, p.y - 0.2);
-	d = max(d, -p.y - 0.4);
+  for(int i = 0; i < 3; i++) {
+    q.xyz = abs(q.xyz + 1.0) - 1.0;
+    q /= clamp(dot(q.xyz, q.xyz), 0.5, 1.0);
+    q *= 1.2;
 
-	return d;
+    rotate(q.xy, 0.1);
+    rotate(q.zy, 0.1);
+  }
+
+  return vec2((length(q.xz) - 1.5)/q.w, 0.0);
 }
 
-float de(vec3 p) {
-	vec3 op = p;
+vec2 smin(vec2 a, vec2 b, float r) {
+  vec2 u = max(vec2(r - a.x, r - b.x), vec2(0));
+  float s = max(r, min(a.x, b.x)) - length(u);
 
-	p.xz = abs(p.xz + 2.0) - 2.0;
-	vec4 qc = vec4(p, 1);
-	qc.xyz -= vec3(1.0, 1.6, 1.0);
-
-	for(int i = 0; i < 5; i++) {
-		qc.xyz = abs(qc.xyz + 1.0) - 1.0;
-		qc /= clamp(dot(qc.xyz, qc.xyz), 0.25, 1.0);
-		qc = 1.1*qc;
-	}
-
-	float b = box(p.xy-vec2(0, 0.70), vec2(0.35, 0.35));
-	b = min(b, box(p.zy-vec2(0, 0.70), vec2(0.35, 0.35)));
-	b = min(b, box(p.xz, vec2(0.35, 0.35)));
-
-	float fc = (length(qc.xyz) - 1.5)/qc.w;
-	fc = max(-b, fc);
-
-	op.xz = -abs(op.xz + 2.0) + 2.0;
-	if(op.z > op.x) op.xz = op.zx;
-
-	float a = box(op.zy - vec2(0, 0.70), vec2(0.35));
-	fc = min(fc, a);
-	fc = min(fc, maze(op));
-
-	return fc;
+  return vec2(s, a.x < b.x ? a.y : b.y);
 }
 
-float trace(vec3 ro, vec3 rd, float mx) {
-    float t = 0.0;
-    
-    for(int i = 0; i < 200; i++) {
-        float d = de(ro + rd*t);
-        if(d < 0.001*t || t >= mx) break;
-        t += d*0.5;
-    }
-
-    return t < mx ? t : -1.0;
+vec2 dmin(vec2 a, vec2 b) {
+  if(a.x < b.x) return a;
+  return b;
 }
 
-vec3 normal(vec3 p, inout float e) {
-    vec2 h = vec2(0.001, 0.0);
-	vec3 n1 = vec3(de(p + h.xyy), de(p + h.yxy), de(p + h.yyx));
-	vec3 n2 = vec3(de(p - h.xyy), de(p - h.yxy), de(p - h.yyx));
 
-	vec3 v = abs(de(p) - 0.5*(n1 + n2));
-	e = min(1.0, pow(v.x+v.y+v.z, 0.95)*10.0);
+vec2 de(vec3 p) {
+  p.xz = mod(p.xz + 4.0, 8.0) - 4.0;
 
-    return normalize(n1 - n2);
+  vec2 f = smin(water(p), spiral(p), 2.0);
+  f = dmin(f, kali(p));
+  f = smin(f, ceiling(p), 1.0);
+
+  return f;
 }
 
+vec2 trace(vec3 ro, vec3 rd, float mx) {
+  float t = 0.0;
+  float m = -1.0;
+  
+  for(int i = 0; i < 200; i++) {
+    vec2 d = de(ro + rd*t);
+    if(d.x < 0.0001*t || t >= mx) break;
+    t += d.x*0.5;
+    m = d.y;
+  }
+  
+  return vec2(t, m);
+}
+
+vec3 normal(vec3 p) {
+  vec2 h = vec2(0.001, 0.0);
+  vec3 n = vec3(
+    de(p + h.xyy).x - de(p - h.xyy).x,
+    de(p + h.yxy).x - de(p - h.yxy).x,
+    de(p + h.yyx).x - de(p - h.yyx).x
+  );
+
+  vec3 b = vec3(0);
+  float id = de(p).y;
+
+  if(id == 1.0) {
+    p.xz += time + time*noise(p);
+    float f = 1.0;
+    b = 0.3*vec3(
+      fbm(f*(p + h.xyy)) - fbm(f*(p - h.xyy)),
+      fbm(f*(p + h.yxy)) - fbm(f*(p - h.yxy)),
+      fbm(f*(p + h.yyx)) - fbm(f*(p - h.yyx))
+    );
+  } else if(id == 2.0) {
+    float f = 4.0;
+    b = 0.1*vec3(
+      fbm(f*(p + h.xyy)) - fbm(f*(p - h.xyy)),
+      fbm(f*(p + h.yxy)) - fbm(f*(p - h.yxy)),
+      fbm(f*(p + h.yyx)) - fbm(f*(p - h.yyx))
+    );
+  }
+
+  return normalize(n + b);
+}
+
+float edge(vec3 p, float c, float s) {
+  float d = de(p).x;
+
+  vec2 h = vec2(0.001, 0.0);
+  vec3 n1 = vec3(de(p + h.xyy).x, de(p + h.yxy).x, de(p + h.yyx).x);
+  vec3 n2 = vec3(de(p - h.xyy).x, de(p - h.yxy).x, de(p - h.yyx).x);
+
+  vec3 v = abs(d - 0.5*(n1 + n2));
+  return min(1.0, pow(v.x+v.y+v.z, c)*s);
+}
 
 float ao(vec3 p, vec3 n) {
-    float o = 0.0, s = 0.006, w = 1.0;
-    for(int i = 0; i < 15; i++) {
-        float d = de(p + n*s);
-        o += (s - d)*w;
-	w *= 0.96;
-        s += s/(float(i) + 1.0);
-    }
-    return 1.0 - clamp(o, 0.0, 1.0);
+  float o = 0.0, s = 0.005;
+  for(int i = 0; i < 15; i++) {
+    float d = de(p + n*s).x;
+    o += (s - d);
+    s += s/float(i + 1);
+  }
+  return 1.0 - clamp(o, 0.0, 1.0);
 }
 
-vec3 color(vec3 ro, vec3 rd, float t) {
-	vec3 col = vec3(0);
+vec3 render(vec3 ro, vec3 rd) {
+  vec3 col = vec3(0);
+  
+  vec2 t = trace(ro, rd, 50.0);
+  if(t.x < 50.0) {
+    vec3 key = normalize(vec3(0.8, 0.7, -0.6));
     
-	if(t < 0.0) return col;
+    vec3 pos = ro + rd*t.x;
+    vec3 nor = normal(pos);
+    vec3 ref = reflect(rd, nor);
+    
+    float occ = ao(pos, nor);
+    float dom = step(2.0, trace(pos + nor*0.001, ref, 2.0).x);
 
-	vec3 pos = ro + rd*t;
-	float edg;
-	vec3 nor = normal(pos, edg);
-	vec3 ref = reflect(rd, nor);
+    col += 0.5*occ;
+    col += pow(clamp(1.0 + dot(rd, nor), 0.0, 1.0), 2.0)*dom;
+    col += pow(clamp(dot(-rd, nor), 0.0, 1.0), 8.0)*occ;
+    
+    float id = t.y;
+    if(id == 1.0) {
+      col *= vec3(0.2, 0.4, 1.0);
+    } else {
+      col += vec3(0.04, 0.15, 0.35)*(1.0 - occ);
+    }
+  }
 
-	vec3 lig = normalize(key - pos);
-	float dis = length(key - pos) - 0.31;
-
-	float occ = ao(pos, nor);
-	float dom = step(0.0, -trace(pos + nor*0.001, ref, 1.0));
-
-	col += 0.1*occ;
-	col += dom*occ*pow(clamp(1.0 + dot(rd, nor), 0.0, 2.0), 0.5);
-	col += vec3(50.0, 0.2, 0.2)*edg;
-
-	return col;
+  col = mix(col, vec3(0), 1.0 - exp(-0.3*t.x));
+  return col;
 }
 
-const float aa = 6.0; 
-vec3 render(vec2 uv) {
-	float hack0 = fov;
-	vec3 hack1 = eye;
-	mat3 hack2 = camera;
-
-	vec3 ro = eye + vec3(0, 0, 3);
-	vec3 rd = normalize(camera*vec3(uv, fov));
-
-	// float time = 0.5*time;
-	// vec3 ro = 1.5*vec3(1.3*cos(time), 2.1/1.6, -1.3*sin(time));
-	// vec3 ww = normalize(vec3(0, 0.5, 0)-ro);
-	// vec3 uu = normalize(cross(vec3(0, 1, 0), ww));
-	// vec3 vv = normalize(cross(ww, uu));
-	// vec3 rd = normalize(camera*vec3(uv, fov));
-
-	vec2 of = vec2(2.0/(5.0*res.y));
-
-	float t = trace(ro, rd, 60.0);
-	vec3 col = color(ro, rd, t)/aa;
-
-	for(float i = 0.0; i < (aa - 1.0); i++) {
-		uv = uv + of;
-		vec3 rd = normalize(camera*vec3(uv, fov));
-		t = trace(ro, rd, 60.0);
-		col += color(ro, rd, t)/aa;
-
-		of = rotate(of, 3.14159/4.0);
-	}
-
-	return col;
-}
-
-void main() {
-	vec2 uv = (-res + 2.0*gl_FragCoord.xy)/res.y;
-	vec3 col = render(uv);
-
-	col = 1.0 - exp(-col*1.0);
-	col = pow(col, vec3(1.0/2.2));
-	fragColor = vec4(col, 1);
+void main( void ) {
+  float hack = time;
+  vec2 uv = (-resolution + 2.0*gl_FragCoord.xy)/resolution.y;
+  
+  vec3 ro = vec3(0, 0, -3) + eye;
+  vec3 rd = normalize(camera*vec3(uv, fov));
+  
+  vec3 col = render(ro, rd);
+  
+  col = 1.0 - exp(-0.4*col);
+  col = pow(abs(col), vec3(1.0/2.2));
+  
+  fragColor = vec4(col, 1);
 }
