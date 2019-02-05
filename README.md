@@ -1,4 +1,5 @@
 # raymarcher
+![alt](https://github.com/zackpudil/raymarcher/raw/master/screenshot.png)
 A small C++/OpenGL raymarcher with a bunch of scenes in them. All scenes can be found at https://www.shadertoy.com/user/zackpudil
 
 ## Building and Running
